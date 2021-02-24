@@ -1,3 +1,7 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
 @font-face{
   font-family: YaHei Regular;
   src: url('fonts/Microsoft Yahei.ttf');
@@ -48,12 +52,34 @@ html, body{
   overflow-x: hidden;
 }
 
+
+
+
+code{
+  display: inline-block;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px 0px 20px 0px;
+
+}
+
+
+input[type=text]{
+  background-color: #C1E297;
+  border-radius: 10px;
+  border-style: none;
+  padding: 5px 15px 5px 15px;
+}
+
+/*
+  FLEX-BOX Styling -------------------
+*/
 div.wrapper{
   width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
-
 }
 
 div.container{
@@ -76,15 +102,12 @@ div.column{
   flex-direction: column;
 }
 
-code{
-  display: inline-block;
-  background-color: white;
-  border-radius: 20px;
-  padding: 10px;
-  margin: 20px 0px 20px 0px;
 
-}
 
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
 div.button{
   display: inline-flex;
   background-color: #ffb600;
@@ -120,13 +143,9 @@ div.navbar{
   position: fixed;
 }
 
-input[type=text]{
-  background-color: #C1E297;
-  border-radius: 10px;
-  border-style: none;
-  padding: 5px 15px 5px 15px;
-}
 
+
+/* navigation (to page, to id) link */
 .nav-item{
   font-family: YaHei;
   font-weight: bold;
@@ -141,6 +160,8 @@ input[type=text]{
   color: #78a83B;
 }
 
+
+/* social media icons (linked) */
 ion-icon{
   font-size: 32px;
   color: white;
