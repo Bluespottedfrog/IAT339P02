@@ -20,7 +20,7 @@
   margin: 15px 0px 15px 0px;
 }
 
-p, input, textarea, code, span {
+p, input, textarea, code, span, ::placeholder {
   font-family: Consolas;
   color: #000000;
   font-weight: lighter;
@@ -81,7 +81,9 @@ code{
   margin: 20px 0px 20px 0px;
 }
 
-
+::placeholder {
+  font-size: 14px;
+}
 
 
 /*
