@@ -154,7 +154,7 @@ div.button:hover{
   background-color: white;
   height: 1px;
   width: 100%;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 div.navbar{
@@ -194,4 +194,11 @@ ion-icon{
 ion-icon:hover{
   cursor: pointer;
   color: #78a83B;
+}
+
+/* list of items */
+ul {
+  list-style-type: none;  /* remove bullets*/
+  margin: 0;
+  padding: 0;
 }
