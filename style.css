@@ -17,6 +17,7 @@ h1, h2, h3, h4, p, label{
   font-family: YaHei;
   color: white;
   font-weight: bold;
+  margin: 15px 0px 15px 0px;
 }
 
 h1{
@@ -165,16 +166,23 @@ div.button:hover{
   background-color: white;
   height: 1px;
   width: 100%;
-  margin: 20px 0;
+  margin: 20px 0px;
 }
 
 div.navbar{
   background-color: #90c947;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 80px;
   box-shadow: 0px 10px 20px #82b540;
   position: fixed;
+  z-index: 10;
+}
+#headerLogo{
+  width: 40px;
+  margin: 0px 20px 0px 20px;
 }
 
 
@@ -192,6 +200,7 @@ div.navbar{
 }
 .nav-item:hover{
   color: #78a83B;
+  cursor: pointer;
 }
 
 
@@ -214,9 +223,6 @@ ion-icon:hover{
 /*
   PRODUST LISTING -------------------
 */
-#shop_temp. {
-
-}
 
 /* Styling for single product */
 .product-frame {
@@ -232,9 +238,10 @@ ion-icon:hover{
   width: 250px;
   height: 250px;
   overflow: hidden;
-  border: 2px solid #C1E297;
+  border: 4px solid #ffffff;
   border-radius: 10px;
   transition: all .2s ease;
+  background-color: white;
 }
 
 .product-img-wrapper img{
