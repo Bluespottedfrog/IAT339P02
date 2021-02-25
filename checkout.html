@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title> Shop </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a class="nav-item" href="shop.html">
+        shop
+      </a>
+
+      <a class="nav-item" href="about.html">
+        about
+      </a>
+
+      <a href="styleguide.html">
+        <img id="headerLogo" src="res/Cat.svg">
+      </a>
+
+      <a class="nav-item" href="events.html">
+        events
+      </a>
+
+      <a class="nav-item" href="contact.html">
+        contact
+      </a>
+    </div>
+
+    <div class="wrapper center">  <!-- WRAPPER -->
+      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+
+
+
+      <div style="width: 50vw; margin-top: 120px;" class="container column">  <!-- CONTAINER 1 -->
+
+        <h3> Payment Info </h3>
+        <div class="underline"></div>
+
+        <div class="left">
+        <form type="post" class="payment ">
+          <div class="column">
+            <label for=""><h4> Cardholder Name </h4></label>
+            <div class="row">
+                <input type="text" placeholder="First Name" name="first-name">
+                <input type="text" placeholder="Last Name" name="last-name">
+            </div>
+
+            <h4><label for="card-numer"> Card Number </label></h4>
+              <input type="text" placeholder="0000 0000 0000 0000" name="card-number" maxlength="16">
+
+            <div class="row">
+              <div class="column">
+                <label for=""><h4> Expiry date </h4></label>
+                <div class="row">
+                  <input type="number" placeholder="MM" name="exp-mon" maxlength="2" min="00" max="12">
+                  <input type="number" placeholder="YYYY" name="exp-year" maxlength="4" min="2020">
+                </div>
+              </div>
+              <div class="column">
+                <label for=""><h4> CVC </h4></label>
+                <input type="text" placeholder="000" name="cvc" maxlength="3">
+              </div>
+
+            </div>
+
+          <input type="submit"></input>
+
+        </form>
+      </div>
+      </div>  <!-- End of CONTAINER 1 -->
+
+
+    </div>
+
+
+
+  </body>
+</html>
