@@ -32,7 +32,7 @@
     <div class="wrapper center">  <!-- WRAPPER -->
       <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
-      <div style="width: 50vw;" class="container column">  <!-- CONTAINER 1 -->
+      <div style="width: 50vw; margin-top: 120px;" class="container column">  <!-- CONTAINER 1 -->
 
         <h1> Cosyben Style Guide </h1>
 
@@ -43,6 +43,7 @@
             <li><a href="#combined_elements" class=button-nav><h4>Combined Elements</h4></a></li>
             <li><a href="#shop_temp" class=button-nav><h4>Product Listing Template</h4></a></li>
             <li><a href="#checkout_temp" class=button-nav><h4>Checkout Template</h4></a></li>
+            <li><a href="#branding" class=button-nav><h4>Branding Elements</h4></a></li>
             <li><a href="#citations" class=button-nav><h4>Citations</h4></a></li>
           </ul>
         <div class="underline"></div>
@@ -140,28 +141,23 @@
             <input type="text" placeholder="Your Email" name="email">
             <textarea placeholder="Tell us about your opinion!" rows="4" cols="20" type="text" required="" spellcheck="true"></textarea>
           </div>
-        </form>
-        <button type="submit" name="submit"><h4>Submit</h4></button>
-
-        <code>
-          &lt;form type="post" &gt;
-            &lt;div class="column"&gt;
-              &lt;h4&gt;&lt;label for="name"&gt;Contact Us&lt;/label&gt;&lt;/h4&gt;
-              &lt;input type="text" placeholder="Your Name" name="name"&gt;
-              &lt;input type="text" placeholder="Your Email" name="email"&gt;
-              &lt;textarea placeholder="Tell us about your opinion!" rows="4" cols="20" type="text" required="" spellcheck="true"&gt;&lt;/textarea&gt;
-            &lt;/div&gt;
-          &lt;/form&gt;
-          &lt;button type="submit" name="submit"&gt;&lt;h4&gt;Submit&lt;/h4&gt;&lt;/button&gt;
-        </code>
-
-          <label for="emailInput"> E-mail </label>
-          <input id="emailInput" type="text" placeholder="E-mail"> </input>
-
-          <label for="messageInput"> Message </label>
-          <textarea id="messageInput" placeholder="Message" name="message" rows="4" cols="20" type="text" spellcheck="true"></textarea>
 
           <input type="submit"></input>
+
+        </form>
+
+
+        <code>
+          &lt;form type="post" &gt; <br> &nbsp;
+          &nbsp; &lt;div class="column"&gt; <br>
+            &nbsp;&nbsp;  &lt;h4&gt;&lt;label for="name"&gt;Contact Us&lt;/label&gt;&lt;/h4&gt; <br>
+            &nbsp;&nbsp;  &lt;input type="text" placeholder="Your Name" name="name"&gt; <br>
+            &nbsp;&nbsp;  &lt;input type="text" placeholder="Your Email" name="email"&gt; <br>
+            &nbsp;&nbsp;  &lt;textarea placeholder="Tell us about your opinion!" rows="4" cols="20" type="text" required="" spellcheck="true"&gt;&lt;/textarea&gt; <br>
+          &nbsp;  &lt;/div&gt; <br>
+          &lt;/form&gt; <br><br>
+          &lt;button type="submit" name="submit"&gt;&lt;h4&gt;Submit&lt;/h4&gt;&lt;/button&gt;
+        </code>
 
         </form>
 
@@ -202,6 +198,7 @@
                 <p>$15.99</p></a>
               </div>
             </div>
+
             <div class="product-frame">
               <div class="product-img-wrapper">
                 <a href="product/t-shirt.html" target="_blank" rel="noopener noreferrer">
@@ -248,24 +245,23 @@
             </div>
 
             <code>
-              <span><</span>div class="product-frame"<span>></span>
-                <span><</span>div class="product-img-wrapper"<span>></span>
-                  <span><</span>a href="product/bag.html" target="_blank" rel="noopener noreferrer"<span>></span>
-                    <span><</span>img src="res/bag.jpg" title="CosyBen Bag"<span>></span><span><</span>/a<span>></span>
-                <span><</span>/div<span>></span>
-                <span><</span>div class="product-detail text-link"<span>></span>
-                  <span><</span>a href="product/bag.html" target="_blank" rel="noopener noreferrer"<span>></span>
-                  <span><</span>h4<span>></span>Hand Bag<span><</span>/h4<span>></span>
-                  <span><</span>p<span>></span>$19.99<span><</span>/p<span>></span></a<span>></span>
-                <span><</span>/div<span>></span><span><</span>/div<span>></span>
+              &lt;div class="product-frame"&gt;<br><br>
+                &nbsp;&lt;div class="product-img-wrapper"&gt;<br>
+                  &nbsp;&nbsp;&lt;a href="product/bottle.html" target="_blank" rel="noopener noreferrer"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;img src="res/bottle.jpg" title="CosyBen Bag"&gt;<br>
+                  &nbsp;&nbsp;&lt;/a&gt;<br>
+                &nbsp;&lt;/div&gt;<br><br>
+                &nbsp;&lt;div class="product-detail text-link"&gt;<br>
+                  &nbsp;&nbsp;&lt;a href="res/bottle.html" target="_blank" rel="noopener noreferrer"&gt;<br>
+                &nbsp;&nbsp;&nbsp;  &lt;h4&gt;Water Bottle&lt;/h4&gt;<br>
+                &nbsp;&nbsp;  &lt;p&gt;$15.99&lt;/p&gt;&lt;/a&gt;<br>
+                &nbsp;&lt;/div&gt;<br><br>
+              &lt;/div&gt;
             </code>
 
           </div>
 
-          <code>
-            <span><</span>
-                          <span>></span> <span><</span>/input<span>></span>
-          </code>
+
 
       </div>  <!-- END OF CONTAINER 4 -->
 
@@ -274,18 +270,58 @@
       <div style="width: 50vw;" class="container column" id="checkout_temp">  <!-- CONTAINER 5 -->
 
         <div class="underline"></div>
-        <h3>Checkout Item</h3>
+          <h3>Checkout Item</h3>
 
-        <h4>Item</h4>
-        <h4>Qty</h4>
-        <h4>Price</h4>
+          <div class="checkoutItemContainer">
+            <div class="checkoutItem">
+              <img src="res/shirt 1.png">
+              <h3> Shirt </h3>
+            </div>
+
+            <div class="qtyButtonContainer">
+                <div class="qtyButton">
+                  <div class="sign">+</div>01<div class="sign">-</div>
+                </div>
+            </div>
+
+            <div class="priceContainer">
+              <h4>$29.99</h4>
+            </div>
+          </div>
+
+          <code>
+            &lt;div class="checkoutItemContainer"&gt;<br><br>
+              &nbsp;&lt;div class="checkoutItem"&gt;<br>
+                &nbsp;&nbsp;&lt;img src="res/shirt 1.png"&gt;<br>
+                &nbsp;&nbsp;&lt;h3&gt; Shirt &lt;/h3&gt;<br>
+              &nbsp;&lt;/div&gt;<br><br>
+
+              &nbsp;&lt;div class="qtyButtonContainer"&gt;<br>
+                  &nbsp;&nbsp;&lt;div class="qtyButton"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&lt;div class="sign"&gt;+&lt;/div&gt;01&lt;div class="sign"&gt;-&lt;/div&gt;<br>
+                  &nbsp;&nbsp;&lt;/div&gt;<br>
+              &nbsp;&lt;/div&gt;<br><br>
+
+              &nbsp;&lt;div class="priceContainer"&gt;<br>
+                &nbsp;&nbsp;&lt;h4&gt;$29.99&lt;/h4&gt;<br>
+              &nbsp;&lt;/div&gt;<br><br>
+            &lt;/div&gt;
+          </code>
 
       </div>  <!-- END OF CONTAINER 5 -->
 
+      <div style="width: 50vw;" class="container column" id="branding">  <!-- CONTAINER 5 -->
 
+        <div class="underline"></div>
+          <h3>Brand Elements</h3>
+          <div>
+            <img class="svgCat" src="res/CatLogo.svg"/>
+            <img class="svgCat" src="res/BubbleTeaCat.svg"/>
+            <img class="svgCat" src="res/DabCat.svg"/>
+          </div>
+
+      </div>  <!-- END OF CONTAINER 5 -->
 
     </div>  <!-- END OF WRAPPER -->
-
-
   </body>
 </html>
