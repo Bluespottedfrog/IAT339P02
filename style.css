@@ -13,7 +13,7 @@
   font-weight: bold;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4, label{
   font-family: YaHei;
   color: white;
   font-weight: bold;
@@ -33,10 +33,11 @@ h3{
 }
 
 h4{
-  color: white;
-  font-family: YaHei Regular;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+label {
 
 }
 
@@ -65,15 +66,10 @@ code{
 }
 
 
-input[type=text]{
-  background-color: #C1E297;
-  border-radius: 10px;
-  border-style: none;
-  padding: 5px 15px 5px 15px;
-}
+
 
 /*
-  FLEX-BOX Styling -------------------
+  FLEX-BOX related -------------------
 */
 div.wrapper{
   width: 100vw;
@@ -102,7 +98,34 @@ div.column{
   flex-direction: column;
 }
 
+/*
+  User input related -------------------
+*/
+input[type=text]{
+  background-color: #C1E297;
+  border: 1px solid #90C947;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px 15px 10px 15px;
+  transition: all 0.2s;
+}
+input:focus {
+  border: 1px solid #ffffff;
+}
 
+
+textarea{
+  padding: 10px 15px 5px 15px;
+  background-color: #C1E297;
+  border: 1px solid #90C947;
+  outline: none;
+  border-radius: 10px;
+  max-width: 100%;
+  transition: all 0.2s;
+}
+textarea:focus {
+  border: 1px solid #ffffff;
+}
 
 
 /*
