@@ -13,11 +13,17 @@
   font-weight: bold;
 }
 
-h1, h2, h3, h4, p, label{
+* {
   font-family: YaHei;
   color: white;
   font-weight: bold;
   margin: 15px 0px 15px 0px;
+}
+
+p, input, textarea, code, span {
+  font-family: Consolas;
+  color: #000000;
+  font-weight: lighter;
 }
 
 h1{
@@ -39,6 +45,7 @@ h4{
 }
 
 p {
+
   font-size: 16px;
 }
 
@@ -66,12 +73,12 @@ ul {
 
 
 code{
+  font-size: 12px;
   display: inline-block;
   background-color: white;
   border-radius: 20px;
   padding: 10px;
   margin: 20px 0px 20px 0px;
-
 }
 
 
@@ -100,9 +107,11 @@ div.center{
 
 }
 div.row{
+  display: flex;
   flex-direction: row;
 }
 div.column{
+  display: flex;
   flex-direction: column;
 }
 div.space-between {
@@ -119,6 +128,7 @@ input[type=text]{
   border-radius: 10px;
   outline: none;
   padding: 10px 15px 10px 15px;
+  margin: 5px 0;
   transition: all 0.2s;
 }
 input:focus {
@@ -128,6 +138,7 @@ input:focus {
 
 textarea{
   padding: 10px 15px 5px 15px;
+  margin: 5px 0;
   background-color: #C1E297;
   border: 1px solid #90C947;
   outline: none;
@@ -139,6 +150,27 @@ textarea:focus {
   border: 1px solid #ffffff;
 }
 
+
+button{
+  display: inline-flex;
+  background-color: #ffb600;
+  min-width: 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  box-shadow: 0px 0px 10px #82b540;
+}
+button > h4{
+    margin: 0;
+}
+
+div.button:hover{
+  background-color: #e46a6c;
+
+}
 
 /*
   INTERACTIVE ELEMENTS -------------------
