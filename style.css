@@ -42,9 +42,6 @@ p {
   font-size: 16px;
 }
 
-label {
-
-}
 
 a{
   text-decoration: none;
@@ -74,7 +71,15 @@ code{
 
 }
 
-
+form{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  padding: 25px;
+  background-color: #85c138;
+  border-radius: 25px;
+}
 
 
 /*
@@ -91,7 +96,6 @@ div.container{
   display: flex;
   min-height: 100vh;
   padding:30px;
-
 }
 
 div.center{
@@ -100,9 +104,11 @@ div.center{
 
 }
 div.row{
+  display: flex;
   flex-direction: row;
 }
 div.column{
+  display: flex;
   flex-direction: column;
 }
 div.space-between {
@@ -143,7 +149,7 @@ textarea:focus {
 /*
   INTERACTIVE ELEMENTS -------------------
 */
-div.button{
+div.button, input[type=submit]{
   display: inline-flex;
   background-color: #ffb600;
   min-width: 100px;
@@ -151,7 +157,22 @@ div.button{
   align-items: center;
   border-radius: 50px;
   padding: 10px;
-  box-shadow: 0px 0px 10px #82b540;
+
+}
+
+input[type=submit]{
+  display: flex;
+  width: 100px;
+  border-style: none;
+  color: white;
+  font-family: YaHei;
+  font-weight: regular;
+  text-transform: uppercase;
+  margin: 15px 0px 15px 0px;
+}
+input[type=submit]:hover{
+  background-color: #e46a6c;
+  cursor: pointer;
 }
 
 div.button > h4{
@@ -208,6 +229,7 @@ div.navbar{
 ion-icon{
   font-size: 32px;
   color: white;
+  margin: 5px;
 
 }
 
