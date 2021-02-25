@@ -20,7 +20,12 @@
   margin: 15px 0px 15px 0px;
 }
 
-p, input, textarea, code, span, ::placeholder {
+p {
+  font-family: YaHei Regular;
+  font-weight: lighter;
+}
+
+input, textarea, code, span, ::placeholder {
   font-family: Consolas;
   color: #000000;
   font-weight: lighter;
@@ -45,7 +50,6 @@ h4{
 }
 
 p {
-
   font-size: 16px;
 }
 
@@ -253,7 +257,6 @@ div.navbar{
 
 /* navigation (to page, to id) link */
 .nav-item{
-  color: white;
   font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
@@ -404,17 +407,38 @@ ion-icon:hover{
   CONTACT PAGE -------------------
 */
 .socialMediaContainer{
+  background-color: #85c138;
+  border-radius: 20px;
   height: auto;
   padding: 25px;
-  margin: 8em 0;
+  margin: 1rem 0;
 }
 .socialMediaContainer h3{
   margin-bottom: 2rem;
 }
 
 
+/*
+  Events PAGE -------------------
+*/
+.eventContainer {
+  height: auto;
+  padding: 25px;
+  margin: 8em 0;
+}
+.eventContainer a{
+  color: #FDE4A8;
+}
+.eventContainer a:hover{
+  color: #F5B5B6;
+}
 
 
+
+
+/*
+   -------------------
+*/
 .svgCat{
   width: 200px;
 }
