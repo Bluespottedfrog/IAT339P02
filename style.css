@@ -109,8 +109,10 @@ div.wrapper{
 }
 
 div.max{
+  position: relative;
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
 }
 div.container{
   display: flex;
@@ -277,6 +279,7 @@ div.button:hover{
 }
 
 div.navbar{
+
   background-color: #90c947;
   display: flex;
   justify-content: center;
@@ -289,6 +292,13 @@ div.navbar{
   position: fixed;
   z-index: 10;
   margin: 0px;
+}
+div.innerNavbar{
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+
 }
 #headerLogo{
   width: 40px;
@@ -311,16 +321,16 @@ div.navbar{
 
 
 /* social media icons (linked) */
-.row > ion-icon{
+.row > ion-icon.socials{
   margin-right: 10px;
 }
-ion-icon{
+ion-icon.socials{
   font-size: 32px;
   color: white;
 
 }
 
-ion-icon:hover{
+ion-icon.socials:hover{
   cursor: pointer;
   color: #78a83B;
 }
@@ -513,4 +523,21 @@ div.carousel > img:hover{
   border-width: 10px;
   cursor: pointer;
   margin: 40px 10px 40px 10px;
+}
+
+
+.checkout{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  margin-right: 100px;
+  font-size: 40px;
+  height: 80px;
+}
+.checkout:hover{
+  color: #78a83B;
+  cursor: pointer;
 }
