@@ -181,7 +181,7 @@ button{
   border-radius: 50px;
   border: none;
   padding: 10px;
-  margin: 5px 0;
+  margin: 15px 0px 15px 0px;
   box-shadow: 0px 0px 10px #82b540;
 }
 button > h4{
@@ -238,6 +238,7 @@ div.button:hover{
 }
 
 div.navbar{
+
   background-color: #90c947;
   display: flex;
   justify-content: center;
@@ -248,6 +249,13 @@ div.navbar{
   position: fixed;
   z-index: 10;
   margin: 0px;
+}
+div.innerNavbar{
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+
 }
 #headerLogo{
   width: 40px;
@@ -270,13 +278,16 @@ div.navbar{
 
 
 /* social media icons (linked) */
-ion-icon{
+.row > ion-icon.socials{
+  margin-right: 10px;
+}
+ion-icon.socials{
   font-size: 32px;
   color: white;
   margin: 5px 20px;
 }
 
-ion-icon:hover{
+ion-icon.socials:hover{
   cursor: pointer;
   color: #78a83B;
 }
@@ -506,5 +517,40 @@ ion-icon:hover{
 }
 .sign:hover{
   color: #ffb600;
+  cursor: pointer;
+}
+
+/* Styling Details */
+div.carousel{
+  display: flex;
+  width: 200vw;
+}
+div.carousel > img {
+  margin: 50px 20px 50px 20px;
+  border-radius: 30px;
+}
+
+div.carousel > img:hover{
+  border-color: white;
+  border-style: solid;
+  border-width: 10px;
+  cursor: pointer;
+  margin: 40px 10px 40px 10px;
+}
+
+
+.checkout{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  margin-right: 100px;
+  font-size: 40px;
+  height: 80px;
+}
+.checkout:hover{
+  color: #78a83B;
   cursor: pointer;
 }
