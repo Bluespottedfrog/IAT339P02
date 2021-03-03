@@ -128,6 +128,8 @@ div.box{
 }
 
 div.footer{
+  width: 100vw;
+  height: 50vh;
   background-color: #7AAF36;
 }
 
@@ -135,7 +137,7 @@ div.half{
   height: 50vh;
 }
 
-.container:nth-child(even){
+.max:nth-child(even){
   background-color: #85c138;
 }
 
@@ -378,6 +380,8 @@ ion-icon:hover{
 }
 .checkoutItemContainer{
   background-color: #85c138;
+  padding: 15px;
+  margin: 15px 0px 15px 0px;
 }
 
 .qtyButtonContainer{
