@@ -17,7 +17,7 @@
   font-family: YaHei;
   color: white;
   font-weight: bold;
-
+  margin: 15px 0px 15px 0px;
 }
 
 p {
@@ -34,23 +34,19 @@ input, textarea, code, span, ::placeholder {
 h1{
   font-size: 72px;
   text-transform: uppercase;
-  margin: 0px;
 }
 
 h2{
   font-size: 48px;
-  margin: 0px;
 }
 
 h3{
   font-size: 30px;
-  margin: 0px;
 }
 
 h4{
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
-  margin: 0px;
 }
 
 p {
@@ -108,37 +104,10 @@ div.wrapper{
   flex-direction: column;
 }
 
-div.max{
-  width: 100vw;
-  height: 100vh;
-}
 div.container{
   display: flex;
   min-height: 100vh;
-  padding: 30px;
-  background-color: #90C947;
-}
-
-div.box{
-  display: inline-flex;
-  flex-direction: column;
-  margin: 10%;
-  width: 40%;
-
-}
-
-div.footer{
-  width: 100vw;
-  height: 50vh;
-  background-color: #7AAF36;
-}
-
-div.half{
-  height: 50vh;
-}
-
-.max:nth-child(even){
-  background-color: #85c138;
+  padding:30px;
 }
 
 div.center{
@@ -207,22 +176,16 @@ button{
   display: inline-flex;
   background-color: #ffb600;
   min-width: 100px;
-  max-width: 150px;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
   border: none;
   padding: 10px;
-  margin: 15px;
+  margin: 5px 0;
   box-shadow: 0px 0px 10px #82b540;
-  text-transform: uppercase;
 }
 button > h4{
     margin: 0;
-}
-button:hover{
-  cursor: pointer;
-  background-color: #E46A6c;
 }
 
 
@@ -281,9 +244,7 @@ div.navbar{
   align-items: center;
   width: 100%;
   height: 80px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #84ba42;
+  box-shadow: 0px 10px 20px #82b540;
   position: fixed;
   z-index: 10;
   margin: 0px;
@@ -309,13 +270,10 @@ div.navbar{
 
 
 /* social media icons (linked) */
-.row > ion-icon{
-  margin-right: 10px;
-}
 ion-icon{
   font-size: 32px;
   color: white;
-
+  margin: 5px 20px;
 }
 
 ion-icon:hover{
@@ -323,11 +281,15 @@ ion-icon:hover{
   color: #78a83B;
 }
 
+
+
+
+
 /*
-  PRODUST LISTING PAGE-------------------
+  SHOP (PRODUST LISTING) PAGE-------------------
 */
 
-/* Styling for single product */
+/* Shop.html Styling for single product*/
 .product-frame {
   width: 280px;
   height: 330px;
@@ -380,8 +342,6 @@ ion-icon:hover{
 }
 .checkoutItemContainer{
   background-color: #85c138;
-  padding: 15px;
-  margin: 15px 0px 15px 0px;
 }
 
 .qtyButtonContainer{
@@ -399,7 +359,7 @@ ion-icon:hover{
   border-radius: 15px;
 }
 
-.checkoutItem, .checkoutItem > h3{
+.checkoutItem, .checkoutItem > h4{
   margin-left: 40px;
 }
 
@@ -420,7 +380,7 @@ ion-icon:hover{
 .totalContainer div {
   margin: 0 2em 0 0 ;
 }
-.totalContainer h4,.totalContainer h3 {
+.totalContainer h4,h3 {
   margin: 0.3rem 1rem;
 }
 
@@ -431,7 +391,7 @@ ion-icon:hover{
 }
 
 .payment h4, label {
-  margin: 5px 0 0 1px ;
+  margin: 15px 0 0 1px ;
 }
 
 .payment div {
@@ -475,7 +435,61 @@ ion-icon:hover{
 }
 
 
+/*
+  INDIVIDUAL PRODUCT PAGE-------------------
+*/
+/* image side */
+.indv-img {
+  width: 40%;
+  margin: 12px 0 5rem 0;
+}
+.indv-img-frame {
+  width: 100%;
+  height: 400px;
+  margin: 0 0 2rem 0;
+}
+.indv-mini-img {
+  width: 25%;
+  height: 80px;
+  margin: 0 10px 0 0;
+}
+.indv-img-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0 0 5rem 0;
+}
+.indv-img-wrapper > img {
+  height: 100%;
+}
 
+/* text side */
+.indv-text {
+  width: 60%;
+  margin: 0 0 0 2rem;
+}
+
+.indv-text > h4{
+  margin: 2rem 0px 0.5rem 0px;
+}
+.indv-text > h3, h2{
+  margin: 0 5px 0.5rem 0;
+}
+/* add space above */
+.indv-section{
+  margin-top: 2rem;
+}
+.purchaseContainer {
+  margin: 1rem 0;
+}
+.purchaseContainer > h4 {
+  margin: 0.3rem 1rem;
+}
 
 /*
    -------------------
