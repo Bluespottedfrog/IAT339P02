@@ -108,10 +108,13 @@ div.wrapper{
   flex-direction: column;
 }
 
+div.max{
+  width: 100vw;
+  height: 100vh;
+}
 div.container{
   display: flex;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
   padding: 30px;
   background-color: #90C947;
 }
@@ -304,20 +307,19 @@ div.navbar{
 
 
 /* social media icons (linked) */
+.row > ion-icon{
+  margin-right: 10px;
+}
 ion-icon{
   font-size: 32px;
   color: white;
-  margin: 5px 20px;
+
 }
 
 ion-icon:hover{
   cursor: pointer;
   color: #78a83B;
 }
-
-
-
-
 
 /*
   PRODUST LISTING PAGE-------------------
