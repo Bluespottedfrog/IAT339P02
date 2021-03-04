@@ -216,7 +216,7 @@ button{
   border: none;
   padding: 10px;
   margin: 15px 0px 15px 0px;
-  box-shadow: 0px 0px 10px #82b540;
+
   text-transform: uppercase;
 }
 button:hover{
@@ -368,6 +368,7 @@ ion-icon.socials:hover{
 
 .product-img-wrapper {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -378,9 +379,33 @@ ion-icon.socials:hover{
   transition: all .2s ease;
   background-color: white;
 }
+.product-add{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 288px;
+  height: 280px;
+  background-color: rgba(0,0,0, 0.5);
+  opacity: 0;
+  transition: opacity 0.25s linear;
 
+}
+.product-add > button{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: transform 0.25s linear, opacity 0.25s linear;
+}
+.product-add:hover{
+  opacity: 1;
+}
+.product-add:hover > button{
+  opacity: 1;
+  transform: translateY(0px);
+}
 .product-img-wrapper >a> img{
   max-height:100%;
+  width: 280px;
   height: 280px;
   transition: all .5s ease;
   vertical-align: middle;
@@ -393,10 +418,12 @@ ion-icon.socials:hover{
   border-radius: 20px;
 }
 
+/*
 .product-img-wrapper >a> img:hover,
 .product-img-wrapper >a> img:focus {
   transform:scale(1.3);
 }
+*/
 
 .product-detail>a>h4, .product-detail>a> p, .product-detail > a {
   margin: 0.5rem 0;
@@ -616,7 +643,7 @@ div.carousel > a > img:hover{
 
 .footer{
   width: 100vw;
-  height: 50vh;
+  height: 30vh;
   background-color: #7AAf36;
 }
 
