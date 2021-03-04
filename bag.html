@@ -19,7 +19,7 @@
 
         <div class="nav-item-container">
           <a href="checkout.html">
-            <ion-icon name="basket-outline"></ion-icon>
+            <ion-icon id="checkout" name="basket-outline"></ion-icon>
           </a>
         </div>
 
@@ -33,7 +33,7 @@
         </div>
 
         <div class="nav-item-container">
-          <a class="nav-item" href="checkout.html">
+          <a class="nav-item" href="about.html">
             about
           </a>
         </div>
@@ -57,9 +57,18 @@
         </div>
 
 
-        <!-- INSERT SHOP ICON HERE -->
 
       </div>
+
+
+      <div class="checkoutContainer">
+      <a href="cart.html">
+        <ion-icon id="checkout" name="basket-outline"></ion-icon>
+      </a>
+      </div>
+
+
+
     </div>
     <!-- ./NAVBAR -->
 
@@ -106,7 +115,7 @@
         <div class="indv-text column"><!-- Text Side -->
           <h2>HAND BAG</h2>
           <div class="row">
-            <h4 style="margin:0;">CAD</h4>
+            <h4 style="margin:0;">CAD </h4>
             <h4 style="margin:0;">$19.99</h4>
           </div><br>
           <h4>DESCRIPTION</h4>
@@ -120,17 +129,14 @@
               </div>
           </div><br>
 
-          <a href="checkout.html" >
-           <div class="button" style="width: 15rem;background-color: unset;border: solid 2px #FFF;">
-            <h4> Buy it now </h4>
-           </div>
-          </a>
-
-          <a href="checkout.html" >
-           <div class="button" style="width: 15rem;">
-            <h4> Add to cart </h4>
-           </div>
-          </a>
+          <div class="indv-section">
+            <a href="cart.html" >
+             <button class="indv-button"> Add to Cart </button>
+            </a>
+            <a href="checkout.html" >
+             <button class="indv-button-alt"> Buy it now </button>
+           </a>
+          </div>
 
           <div class="underline"></div>
 
@@ -143,10 +149,10 @@
 
           <div class="row left center">
             <h4>share:</h4>
-            <h3><ion-icon name="logo-facebook"></ion-icon></h3>
-            <h3><ion-icon name="logo-pinterest"></ion-icon></h3>
-            <h3><ion-icon name="logo-twitter"></ion-icon></h3>
-            <h3><ion-icon name="logo-reddit"></ion-icon></h3>
+            <h3><ion-icon class="indv-icons" name="logo-facebook"></ion-icon></h3>
+            <h3><ion-icon class="indv-icons" name="logo-pinterest"></ion-icon></h3>
+            <h3><ion-icon class="indv-icons" name="logo-twitter"></ion-icon></h3>
+            <h3><ion-icon class="indv-icons" name="logo-reddit"></ion-icon></h3>
           </div>
         </div>
       </div>
