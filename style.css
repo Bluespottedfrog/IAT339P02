@@ -237,7 +237,7 @@ div.button, input[type=submit]{
   align-items: center;
   border-radius: 50px;
   padding: 10px;
-
+  box-shadow: 0px 0px 10px #82b540;
 }
 div.button:hover{
   background-color: #e46a6c;
@@ -430,7 +430,11 @@ ion-icon.socials:hover{
   color: #ffffff;
 }
 
-/* Checkout Styling */
+
+/*
+   CART PAGE-------------------
+*/
+
 .checkoutItemContainer, .checkoutItem, .qtyButtonContainer, .priceContainer{
   width: 100%;
   display: flex;
@@ -439,8 +443,9 @@ ion-icon.socials:hover{
 }
 .checkoutItemContainer{
   background-color: #85c138;
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 2rem;
+  width: auto;
 }
 
 .qtyButtonContainer{
@@ -458,7 +463,7 @@ ion-icon.socials:hover{
   border-radius: 15px;
 }
 
-.checkoutItem, .checkoutItem > h4{
+.checkoutItem, .checkoutItem > h4 {
   margin-left: 40px;
 }
 
@@ -474,21 +479,29 @@ ion-icon.socials:hover{
 
 /* Total Amount due at check out */
 .totalContainer {
-  margin: 1rem 0;
+  /* height: 100%; */
+  padding: 20px;
+  border-radius: 25px;
+  margin: 0 3rem 0 0;
 }
 .totalContainer div {
   margin: 0 2em 0 0 ;
 }
-.totalContainer > h4, .totalContainer > h3 {
+.totalContainer >div> p, .totalContainer >div> h4 {
   margin: 0.3rem 1rem;
 }
 
-/* Payment Form Styling */
+
+/*
+   PAYMENT PAGE-------------------
+*/
 .payment {
   margin: 0;
   width: 33rem;
 }
-
+.total-payment {
+  background-color: #85c138;
+}
 .payment h4, .payment > label {
   margin: 15px 0 0 1px ;
 }
@@ -570,7 +583,6 @@ ion-icon.socials:hover{
 .indv-img-wrapper > img {
   height: 100%;
 }
-
 /* text side */
 .indv-text {
   width: 60%;
@@ -584,15 +596,30 @@ ion-icon.socials:hover{
   margin: 0 5px 0.5rem 0;
 }
 /* add space above */
-.indv-section{
+.indv-section {
   margin-top: 2rem;
 }
-.purchaseContainer {
+/* BuyItNow & AddToCart */
+.indv-button {
+  width: 20rem;
+  margin: 1rem 0 0 0;
+}
+.indv-button-alt {
+  width: 20rem;
+  margin: 1rem 0 0 0;
+  background-color: #90C947;
+  border: solid 2px #FFF;
+}
+.indv-button-alt: hover {
+  background-color: #E46A6C;
+}
+/* .purchaseContainer {
   margin: 1rem 0;
 }
 .purchaseContainer > h4 {
   margin: 0.3rem 1rem;
-}
+} */
+
 
 /*
    -------------------
