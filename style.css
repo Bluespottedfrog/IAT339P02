@@ -335,20 +335,22 @@ ion-icon.socials:hover{
 /*
   SHOP (PRODUST LISTING) PAGE-------------------
 */
-
+.product-section {
+  padding: 2rem 0;
+}
 /* Shop.html Styling for single product*/
 .product-frame {
   width: 280px;
-  height: 330px;
-  margin-bottom: 35px;
+  /* height: 380px; */
+  margin-bottom: 5rem;
 }
 
 .product-img-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 280px;
   overflow: hidden;
   border: 4px solid #ffffff;
   border-radius: 10px;
@@ -356,9 +358,9 @@ ion-icon.socials:hover{
   background-color: white;
 }
 
-.product-img-wrapper > img{
+.product-img-wrapper >a> img{
   max-height:100%;
-  height: 250px;
+  height: 280px;
   transition: all .5s ease;
   vertical-align: middle;
 }
@@ -370,13 +372,13 @@ ion-icon.socials:hover{
   border-radius: 20px;
 }
 
-.product-img-wrapper >  img:hover,
-.product-img-wrapper >  img:focus {
+.product-img-wrapper >a> img:hover,
+.product-img-wrapper >a> img:focus {
   transform:scale(1.3);
 }
 
-.product-detail > h4, .product-detail > p, .product-detail > a {
-  margin: 5px 0;
+.product-detail>a>h4, .product-detail>a> p, .product-detail > a {
+  margin: 0.5rem 0;
   color: #ffffff;
 }
 
@@ -389,6 +391,8 @@ ion-icon.socials:hover{
 }
 .checkoutItemContainer{
   background-color: #85c138;
+  margin: 2rem 0;
+  padding: 2rem;
 }
 
 .qtyButtonContainer{
@@ -427,11 +431,7 @@ ion-icon.socials:hover{
 .totalContainer div {
   margin: 0 2em 0 0 ;
 }
-<<<<<<< HEAD
 .totalContainer > h4, .totalContainer > h3 {
-=======
-.totalContainer h4, .totalContainer h3 {
->>>>>>> 83948ee4bff25f33223073b5cae7cabee36ba913
   margin: 0.3rem 1rem;
 }
 
