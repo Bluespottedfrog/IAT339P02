@@ -4,6 +4,8 @@
   <head>
     <title> CheckOut </title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
   </head>
 
   <body>
@@ -48,7 +50,7 @@
 
 
         <div class="nav-item-container">
-          <a href="checkout.html">
+          <a href="cart.html">
             <ion-icon id="checkout" name="basket-outline"></ion-icon>
           </a>
         </div>
@@ -107,8 +109,6 @@
 
       <div class="half-width container column">  <!-- CONTAINER 1 -->
 
-
-
         <h3> Payment Info </h3>
         <div class="underline"></div>
 
@@ -133,7 +133,7 @@
           <form type="post" class="payment "><!-- Right -->
             <div class="column">
               <label for=""><h4> Cardholder Name </h4></label>
-              <div class="row">
+              <div class="payment-input-wrapper">
                   <input type="text" placeholder="First Name" name="first-name">
                   <input type="text" placeholder="Last Name" name="last-name">
               </div>
@@ -141,7 +141,7 @@
               <h4><label for="card-numer"> Card Number </label></h4>
                 <input type="text" placeholder="0000 0000 0000 0000" name="card-number" maxlength="16">
 
-              <div class="row">
+              <div class="payment-input-wrapper">
                 <div class="column">
                   <label for=""><h4> Expiry date </h4></label>
                   <div class="row">
@@ -164,7 +164,7 @@
 
 
     </div>
-
+  </div>
 
 
   </body>
