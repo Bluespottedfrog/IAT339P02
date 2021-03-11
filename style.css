@@ -443,6 +443,24 @@ ion-icon.socials:hover{
   margin: 0.5rem 0;
   color: #ffffff;
 }
+@media only screen and (max-width: 768px) {
+  .product-section {
+
+  }
+  .product-frame {
+    width: auto;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  .product-img-wrapper {
+  height: auto;
+  }
+  .product-img-wrapper >a> img {
+  width: 100%;
+  height: auto;
+  }
+
+}
 
 
 /*
@@ -504,6 +522,24 @@ ion-icon.socials:hover{
   margin: 0.3rem 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .checkoutItemContainer{
+    padding: 1rem 0 1rem 0;
+  }
+  .checkoutItem {
+    margin: 1rem 5% 1rem 5%;
+    flex-wrap: wrap;
+  }
+  .checkoutItem > img{
+    width: 90%;
+  }
+  .checkoutItem >a> h4 {
+    margin: 2rem 0 0 0;
+  }
+  .checkoutItemContainer > .qtyButtonContainer, .checkoutItemContainer > .priceContainer {
+    margin-left: 5%;
+  }
+}
 
 /*
    PAYMENT PAGE-------------------
@@ -561,6 +597,61 @@ ion-icon.socials:hover{
 }
 .eventContainer > a:hover{
   color: #F5B5B6;
+}
+.time-stamp {
+  background-color: #85c138;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0 0 0;
+}
+.time-stamp > p {
+  color: #56575B;
+  margin: 0;
+  font-size: 14px;
+}
+@media only screen and (max-width: 768px) {
+  .eventContainer {
+    margin: 2rem 0 0 0;
+  }
+}
+
+/*
+  ABOUT PAGE -------------------
+*/
+.aboutContainer {
+  height: auto;
+  padding: 25px;
+  margin: 2rem 0;
+  /* background-color: #85c138; */
+  border-radius: 20px;
+}
+.aboutContainer > a{
+  color: #FDE4A8;
+}
+.aboutContainer > a:hover{
+  color: #F5B5B6;
+}
+
+/* image side */
+.about-img {
+  border-radius: 10px;
+  background-color: #85C138;
+  padding: 2rem 0;
+  /* height: auto;
+  margin: 12px 0 5rem 0; */
+}
+.about-img-frame {
+  width: 25%;
+  margin: 0 5%;
+}
+.about-img-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.about-img-wrapper > img {
+  width: 100%;
 }
 
 
@@ -639,7 +730,34 @@ ion-icon.socials:hover{
 .purchaseContainer > h4 {
   margin: 0.3rem 1rem;
 } */
-
+@media only screen and (max-width: 768px) {
+  .indv-half-width {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .indv-text {
+    width: auto;
+    margin: 0 0 0 5%;
+  }
+  .indv-img {
+    width: 100vw;
+  }
+  .indv-button {
+    width: 90%;
+  }
+  .indv-button-alt {
+    width: 90%;
+  }
+  .indv-img-wrapper > img{
+    height: auto;
+  }
+  .indv-img-wrapper > img{
+    width: 100%;
+  }
+  .indv-img-frame {
+    height: 50vh;
+  }
+}
 
 
 
@@ -784,10 +902,6 @@ a > ion-icon:hover{
   .checkoutItemContainer{
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .checkoutItemContainer > .qtyButtonContainer, .checkoutItemContainer > .priceContainer{
-    margin-left: 225px;
   }
 
 }
