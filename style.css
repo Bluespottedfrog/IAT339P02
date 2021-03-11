@@ -702,6 +702,23 @@ a > ion-icon:hover{
 
 /* Animated Elements */
 
+.ani > a > button, .ani > p{
+  transform: translateY(-20px);
+  opacity: 0;
+  transition-delay: 0.25s;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.ani > .bodyText{
+  transition-delay: 0.5s;
+}
+
+
+.ani.triggered > a > button, .ani.triggered > p{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 #bm {
   width: 600px;
 }
