@@ -918,3 +918,9 @@ a > ion-icon:hover{
   }
 
 }
+
+
+.temp-box{
+  width: 30px;
+  height: 30px;
+}
