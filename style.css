@@ -551,6 +551,12 @@ ion-icon.socials:hover{
 .total-payment {
   background-color: #85c138;
 }
+
+.payment-input-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .payment h4, .payment > label {
   margin: 15px 0 0 1px ;
 }
@@ -564,6 +570,13 @@ ion-icon.socials:hover{
   flex-grow: 1;
 }
 
+
+@media only screen and (max-width: 768px){
+  .payment-input-wrapper {
+    flex-direction: column;
+  }
+
+}
 
 /*
   CONTACT PAGE -------------------
@@ -917,10 +930,4 @@ a > ion-icon:hover{
     align-items: flex-start;
   }
 
-}
-
-
-.temp-box{
-  width: 30px;
-  height: 30px;
 }
