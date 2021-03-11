@@ -906,6 +906,9 @@ a > ion-icon:hover{
     display:none;
   }
 
+  #bm{
+    width: 300px;
+  }
   #hamburgerMenu, #checkout{
     font-size: 40px;
   }
@@ -931,6 +934,22 @@ a > ion-icon:hover{
     align-items: flex-start;
   }
 
+}
+
+@media only screen and (max-width: 428px){
+  p{
+    font-size: 12px;
+  }
+  h2{
+    font-size: 24px;
+  }
+  h3{
+    font-size: 24px;
+  }
+  .contactContainer{
+    padding: 0px;
+    height: 50vh;
+  }
 }
 
 
