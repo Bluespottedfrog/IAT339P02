@@ -37,11 +37,13 @@ p {
   line-height: 1.5;
 }
 
-input, textarea, code, span, ::placeholder {
+input, textarea, code, ::placeholder {
   font-family: Consolas;
   color: #000000;
   font-weight: lighter;
 }
+
+
 
 h1{
   font-size: 72px;
@@ -108,6 +110,10 @@ form{
 /*
   FLEX-BOX related -------------------
 */
+.half-width{
+  width: 50vw;
+  margin-top: 120px;
+}
 .box{
   display: flex;
   margin-left: 20%;
@@ -318,6 +324,12 @@ div.mobileNav{
 
 
 /* navigation (to page, to id) link */
+#hamburger{
+  width: 50px;
+}
+#hamburger:hover{
+  cursor: pointer;
+}
 .nav-item-container{
   display: flex;
   justify-content: center;
@@ -325,7 +337,6 @@ div.mobileNav{
   margin: 0px 20px 0px 20px;
 }
 .nav-item{
-
   font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
@@ -466,7 +477,7 @@ ion-icon.socials:hover{
 }
 
 .checkoutItem, .checkoutItem >a> h4 {
-  margin-left: 40px;
+  margin-left: 2em;
 }
 
 .qtyButton{
@@ -689,10 +700,35 @@ a > ion-icon:hover{
   color: #78a83B;
 }
 
+/* Animated Elements */
 
+#bm {
+  width: 600px;
+}
+
+.animateLetters {
+  position: relative;
+}
+
+.animateLetters .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  overflow: hidden;
+}
+
+.animateLetters .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+}
 
 /*BREAKPOINT FOR MOBILE */
 @media only screen and (max-width: 768px){
+  /* FLEXBOX RELATED */
+  .half-width{
+    width: 95vw;
+  }
   .checkoutContainer{
     display: none;
   }
@@ -725,6 +761,16 @@ a > ion-icon:hover{
   }
   .bodyText{
     margin-right: 20%;
+  }
+
+  /*Checkout related */
+  .checkoutItemContainer{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .checkoutItemContainer > .qtyButtonContainer, .checkoutItemContainer > .priceContainer{
+    margin-left: 225px;
   }
 
 }

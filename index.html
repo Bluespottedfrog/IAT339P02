@@ -5,18 +5,18 @@
     <title> P02 - Style Guide</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
   </head>
 
   <body>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
     <!-- NAVBAR -->
     <div class="navbar">
 
       <div class="mobileNav">
-
-        <div class="nav-item-container">
-              <ion-icon id="hamburgerMenu" name="menu-outline"></ion-icon>
-        </div>
+        <div id="hamburger" class="nav-item-container">
+      </div>
 
 
         <div class="nav-item-container">
@@ -77,16 +77,28 @@
     <div class="wrapper center">
         <div class="max column center">
           <div style="height: 100%; justify-content: flex-end;"class="column center">
-            <div style="margin-bottom: 30%;" class="column center">
-              <h1>Cosyben</h1>
-              <h2 style="color: #c1e297;">笨神神聊</h2>
+            <div class="column center">
+
+              <h1 class="animateLetters">
+                <span class="text-wrapper">
+                  <span class="letters"> Cosyben </span>
+                </span>
+              </h1>
+
+              <h2 class="animateLetters" >
+                <span class="text-wrapper">
+                  <span class="letters" style="color: #c1e297;">笨神神聊</span>
+                </span>
+              </h2>
 
               <a href="shop.html">
                 <button> shop </button>
               </a>
 
             </div>
-            <img src="res/CatHome.svg"/>
+            <div id="bm" data-file="cat">
+            </div>
+
           </div>
         </div>
 
@@ -177,6 +189,9 @@
 
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js" integrity="sha512-BB7rb8ZBAxtdJdB7nwDijJH9NC+648xSzviK9Itm+5APTtdpgKz1+82bDl4znz/FBhd0R7pJ/gQtomnMpZYzRw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 
 </html>
