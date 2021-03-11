@@ -41,3 +41,17 @@ anime.timeline({loop: false})
     elasticity: 600,
     delay: (el, i) => 45 * (i+1)
 });
+
+function showMenu(){
+  var getMenu = document.getElementById("mobileMenu");
+  getMenu.style.display = "flex";
+  getMenu.style.opacity = 1;
+  console.log("working");
+}
+
+function closeMenu(){
+  var getMenu = document.getElementById("mobileMenu");
+  getMenu.style.display = "none";
+  getMenu.style.opacity = 0;
+  console.log("working");
+}

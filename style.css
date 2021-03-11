@@ -282,6 +282,20 @@ div.button:hover{
   margin: 20px 0px;
 }
 
+#mobileMenu{
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #90C947;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 div.navbar{
   background-color: #90c947;
   display: flex;

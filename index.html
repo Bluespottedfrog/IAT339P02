@@ -12,12 +12,40 @@
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
     <!-- NAVBAR -->
-    <div class="navbar">
+    <div id="mobileMenu">
+      <a href="index.html">
+        <h2> Home </h2>
+      </a>
+      <a href="shop.html">
+        <h2> Shop </h2>
+      </a>
 
+      <a href="about.html">
+        <h2> About </h2>
+      </a>
+
+      <a href="events.html">
+        <h2> Events </h2>
+      </a>
+
+      <a href="contact.html">
+        <h2> Contact </h2>
+      </a>
+      <br>
+      <a href="cart.html">
+        <h2> Cart </h2>
+      </a>
+
+      <br>
+      <button onclick="closeMenu();"> Close Menu </button>
+    </div>
+
+    <div class="navbar">
+      <div class="mobileNav">
       <div class="nav-item-container">
-        <a href="index.html">
-        <ion-icon id="hamburgerMenu" name="menu-outline" href="index.html"></ion-icon>
-        </a>
+
+        <ion-icon onclick="showMenu()" id="hamburgerMenu" name="menu-outline" href="index.html"></ion-icon>
+
       </div>
 
 
