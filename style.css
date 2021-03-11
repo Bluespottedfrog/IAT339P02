@@ -634,6 +634,8 @@ ion-icon.socials:hover{
 
 /* image side */
 .about-img {
+  display: flex;
+  flex-direction: row;
   border-radius: 10px;
   background-color: #85C138;
   padding: 2rem 0;
@@ -653,7 +655,18 @@ ion-icon.socials:hover{
 .about-img-wrapper > img {
   width: 100%;
 }
+@media only screen and (max-width: 1080px) {
 
+  .about-img {
+    flex-direction: column;
+  }
+  .about-img-frame{
+    width: 50%;
+  }
+  .about-img-frame > h4{
+    margin: 5rem 0 1rem 0;
+  }
+}
 
 /*
   INDIVIDUAL PRODUCT PAGE-------------------
