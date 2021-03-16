@@ -43,8 +43,6 @@ input, textarea, code, ::placeholder {
   font-weight: lighter;
 }
 
-
-
 h1{
   font-size: 72px;
   text-transform: uppercase;
@@ -605,9 +603,7 @@ ion-icon.socials:hover{
 .contact-section {
   margin: 2rem 0;
 }
-.contact-icon > a{
-  margin: 0 2rem;
-}
+
 
 /*
   Events PAGE -------------------
@@ -847,7 +843,6 @@ div.carousel > a > img:hover{
 
 }
 
-
 .footer{
   width: 100vw;
   height: 30vh;
@@ -858,17 +853,33 @@ a > ion-icon:hover{
   color: #78a83B;
 }
 
+#youtube, #tiktok, #instagram, #twitter{
+  transition: color 0.25s linear;
+}
+#youtube:hover{
+  color: #ff0000;
+}
+#twitter:hover{
+  color: #1da1f2;
+}
+#tiktok:hover{
+  color: black;
+}
+#instagram:hover{
+  color: black;
+}
+
 /* Animated Elements */
 
 .ani > a > button, .ani > p{
   transform: translateY(-20px);
   opacity: 0;
-  transition-delay: 0.25s;
+  transition-delay: 0.75s;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .ani > .bodyText{
-  transition-delay: 0.5s;
+  transition-delay: 1s;
 }
 
 
@@ -879,6 +890,19 @@ a > ion-icon:hover{
 
 #bm {
   width: 600px;
+}
+#dabcat{
+  width: 400px;
+  position: absolute;
+  align-self: flex-end;
+  transition: transform 1s ease, opacity 1s ease;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+}
+#dabcat.triggered{
+      transform: translateX(60vw);
+      opacity: 1;
 }
 
 .animateLetters {

@@ -1,5 +1,6 @@
-var cat = document.getElementById("bm");
-var hamburger = document.getElementById("hamburger");
+var cat         = document.getElementById("bm");
+var hamburger   = document.getElementById("hamburger");
+var dabcat      = document.getElementById("dabcat");
 
 var anim = bodymovin.loadAnimation({
   container: cat,
@@ -8,6 +9,14 @@ var anim = bodymovin.loadAnimation({
   loop: true,
   autoplay: true,
   name: 'logo',
+});
+
+var dabcatAnim = bodymovin.loadAnimation({
+  container: dabcat,
+  path: 'icons/dabcat.json',
+  renderer: 'svg',
+  loop: true,
+  autoplay: true
 });
 
 var burgerAnim = bodymovin.loadAnimation({
