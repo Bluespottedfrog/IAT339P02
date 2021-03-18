@@ -378,6 +378,13 @@ ion-icon.socials:hover{
 }
 
 
+.mini-hero{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
 
 
 
@@ -476,6 +483,7 @@ ion-icon.socials:hover{
   .product-img-wrapper {
   height: auto;
   }
+
 
 
 }
@@ -1033,7 +1041,7 @@ a > ion-icon:hover{
   align-self: bottom;
 }
 
-#dabcat{
+#dabcat.dabcat{
   width: 400px;
   position: absolute;
   align-self: flex-end;
@@ -1042,7 +1050,7 @@ a > ion-icon:hover{
   margin: 0;
   opacity: 0;
 }
-#dabcat.triggered{
+#dabcat.dabcat.triggered{
       transform: translateX(60vw);
       opacity: 1;
 }
@@ -1122,6 +1130,9 @@ a > ion-icon:hover{
 
   }
 
+  .mini-hero{
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 428px){
