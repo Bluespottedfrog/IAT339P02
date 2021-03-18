@@ -159,53 +159,41 @@
         </div>
         <!-- ./ABOUT SECTION -->
 
-        <div class="container max column center">
-
-            <div>
+        <!-- VIDEO CAROUSEL SECTION -->
+        <div class="column max center">
+            <div class="box column">
+              <div class="ani">
               <h2>STAY POSTED!</h2>
               <h3>SUNFLOWER FESTIVAL </h3>
               <h3 style="color: #c1e297;">视频更新</h3>
             </div>
+          </div>
 
-            <script>
-              var i = 0;
-              var imgInterval(toNextImg, 1000);
-
-              function toNextImg(){
-                var imgArray = document.getElementById("");
-                  if(imgArray[i].type == "radio"){
-
-                  }
-              }
-              </script>
-
-            <div class="carousel-wrapper">
+            <div class="carousel-wrapper" id="indexCarousel">
               <div class="carousel">
-                <a href="https://www.youtube.com/watch?v=CP_bk7GmMyE&ab_channel=%E7%AC%A8%E7%A5%9E%E7%A5%9E%E8%81%8ACosyBen">
-                  <img class="carousel-item active" src="res/videos/EnglishBay.png">
-                </a>
-
-                <a href="https://www.youtube.com/watch?v=hG8EJ0rLgAg&ab_channel=%E7%AC%A8%E7%A5%9E%E7%A5%9E%E8%81%8ACosyBen">
-                  <img class="carousel-item next" src="res/videos/SunflowerFestival.png">
-                </a>
-
-                <a href="https://www.youtube.com/watch?v=OMHQbrO11fU&ab_channel=%E7%AC%A8%E7%A5%9E%E7%A5%9E%E8%81%8ACosyBen">
-                  <img class="carousel-item" src="res/videos/Mahjong.png">
-                </a>
-
-                <a href="https://www.youtube.com/watch?v=hG8EJ0rLgAg&ab_channel=%E7%AC%A8%E7%A5%9E%E7%A5%9E%E8%81%8ACosyBen">
-                  <img class="carousel-item prev" src="res/videos/SunflowerFestival.png">
-                </a>
-
-                <div class="carousel-next"></div>
-                <div class="carousel-prev"></div>
-                
-              </div>
+            		<a class="carousel-item active" href="https://www.youtube.com/watch?v=CP_bk7GmMyE&ab_channel=%E7%AC%A8%E7%A5%9E%E7%A5%9E%E8%81%8ACosyBen">
+            			<img src="res/videos/EnglishBay.png">
+            		</a>
+            		<a class=" carousel-item next" href="https://www.youtube.com/watch?v=hG8EJ0rLgAg&ab_channel=%E7%AC%A8%E7%A5%9E%E7%A5%9E%E8%81%8ACosyBen">
+            			<img src="res/videos/SunflowerFestival.png">
+            		</a>
+            		<a class="carousel-item" href="https://www.youtube.com/watch?v=OMHQbrO11fU&ab_channel=%E7%AC%A8%E7%A5%9E%E7%A5%9E%E8%81%8ACosyBen">
+            			<img src="res/videos/Mahjong.png">
+            		</a>
+            		<a class="carousel-item" href="https://www.youtube.com/watch?v=CP_bk7GmMyE&ab_channel=%E7%AC%A8%E7%A5%9E%E7%A5%9E%E8%81%8ACosyBen">
+            			<img src="res/videos/EnglishBay.png">
+            		</a>
+            		<!-- <a class="carousel-item prev" href="https://www.youtube.com/watch?v=hG8EJ0rLgAg&ab_channel=%E7%AC%A8%E7%A5%9E%E7%A5%9E%E8%81%8ACosyBen">
+            			<img src="res/videos/SunflowerFestival.png">
+            		</a> -->
+            		<div class="carousel-button-container">
+            			<div class="carousel-button"><ion-icon onclick="moveCaresoul();" name="chevron-back-outline"></ion-icon></div>
+            			<div class="carousel-button"><ion-icon onclick="moveCaresoul();" name="chevron-forward-outline"></ion-icon></div>
+            		</div>
+            	</div>
             </div>
-
-
         </div>
-
+        <!-- ./VIDEO CAROUSEL SECTION -->
 
         <div style="position: relative;" class="row half max">
           <div id="dabcat" class="ani">
