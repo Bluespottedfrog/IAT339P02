@@ -90,13 +90,11 @@ function redirect(){
 
 
 
-
+/* Caresoul Tutorial was referred from https://codepen.io/YousifW/pen/yLeroBz */
 if(button.length > 0){
 let current = 0;
 let prev = 3;
 let next = 1;
-
-
 
 const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 const gotoNext = () => current < 3 ? gotoNum(current + 1) : gotoNum(0);
