@@ -866,8 +866,8 @@ ion-icon.socials:hover{
 /* Styling Details */
 .carousel-wrapper {
   position: relative;
-  width: 100%;
-  height: 600px;
+  width: 100vw;
+  height: 60vh;
   padding: 0;
   overflow: hidden;
 }
@@ -886,8 +886,8 @@ ion-icon.socials:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
-  height: 400px;
+  width: 40vw;
+  height: 40vh;
   border-radius: 30px;
   overflow: hidden;
   transition: all .3s ease-in-out;
@@ -905,20 +905,21 @@ ion-icon.socials:hover{
 .carousel-item.active {
   opacity: 1;
   z-index: 99;
-  border-color: white;
-  border-style: solid;
-  border-width: 10px;
+  border: white solid 10px;
   box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+}
+.carousel-item.active:hover, .carousel-item.active:focus {
+  border: #ffb600 solid 10px;
 }
 .carousel-item.prev {
   opacity: 30%;
   z-index: 2;
-  transform: translate(-150%, -50%) scale(70%);
+  transform: translate(-155%, -50%) scale(70%);
 }
 .carousel-item.next {
   opacity: 30%;
   z-index: 2;
-  transform: translate(50%, -50%) scale(70%);
+  transform: translate(55%, -50%) scale(70%);
 }
 /* Carousel's  <  >  buttons */
 .carousel-button-container {
@@ -926,19 +927,21 @@ ion-icon.socials:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 900px;
+  width: 50vw;
   z-index: 100;
+  transition: all .3s ease-in-out;
 }
 .carousel-button {
-  /* color: white;
-  font-size: 32px; */
   cursor: pointer;
   position: relative;
-  opacity: 0.75;
+  width: 50px;
+  height: 50px;
+  background-color: #ffb600;
+  border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
 .carousel-button:hover {
-  opacity: 1;
+  background-color: #E46A6c;
 }
 .carousel-button:before {
   content: " ";
@@ -948,7 +951,7 @@ ion-icon.socials:hover{
   transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #ffb600;
   border-radius: 50%;
   z-index: -99;
 }
@@ -1132,6 +1135,14 @@ a > ion-icon:hover{
 
   .mini-hero{
     flex-direction: column;
+  }
+
+  /* Index page Carousel related */
+  .carousel-item {
+    width: 90vw;
+  }
+  .carousel-button-container {
+    width: 100vw;
   }
 }
 
