@@ -814,24 +814,122 @@ ion-icon.socials:hover{
   color: #ffb600;
   cursor: pointer;
 }
-
+/*
+   index page photo caresoul
+*/
 /* Styling Details */
-div.carousel{
-  display: flex;
-  width: 200vw;
-}
-div.carousel > a > img {
-  margin: 50px 20px 50px 20px;
-  border-radius: 30px;
+.carousel-wrapper {
+  /* position: relative;
+  overflow: hidden;
+  width: 90%;
+  height: 50vh; */
 }
 
-div.carousel > a > img:hover{
+.carousel-wrapper * {
+  /* box-sizing: border-box; */
+}
+.carousel{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+/* Indivisual Images on the carousel */
+.carousel-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+  z-index: -10;
+}
+.carousel-item:hover{
   border-color: white;
   border-style: solid;
   border-width: 10px;
   cursor: pointer;
-  margin: 40px 10px 40px 10px;
 }
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-item.active {
+  opacity: 1;
+  z-index: 99;
+}
+.carousel-item.prev {
+  opacity: 30%;
+  z-index: 2;
+    transform: translate(-150%, -50%) scale(70%);
+}
+.carousel-item.next {
+  opacity: 30%;
+  z-index: 2;
+  transform: translate(50%, -50%) scale(70%);
+}
+/* Carousel's  <  >  buttons */
+.carousel-btn-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  z-index: 100;
+}
+.carousel-btn {
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.75;
+  transition: all 300ms ease-in-out;
+}
+.carousel-btn:hover {
+  opacity: 1;
+}
+.carousel-btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  z-index: -99;
+}
+.carousel-btn:nth-child(1) {
+  float: left;
+}
+
+.carousel-btn:nth-child(2) {
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .checkout:hover{
