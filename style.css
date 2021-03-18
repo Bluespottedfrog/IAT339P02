@@ -173,6 +173,7 @@ div.column{
 div.space-between {
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 /*
@@ -382,12 +383,21 @@ ion-icon.socials:hover{
 /*
   SHOP (PRODUST LISTING) PAGE-------------------
 */
-.product-section {
-  padding: 2rem 0;
-}
+
 /* Shop.html Styling for single product*/
+.product-section{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 .product-frame {
-  width: 280px;
+  display: inline-flex;
+  flex-direction: column;
   /* height: 380px; */
   margin-bottom: 5rem;
 }
@@ -456,9 +466,7 @@ ion-icon.socials:hover{
   color: #ffffff;
 }
 @media only screen and (max-width: 768px) {
-  .product-section {
 
-  }
   .product-frame {
     width: auto;
     height: auto;
@@ -467,10 +475,7 @@ ion-icon.socials:hover{
   .product-img-wrapper {
   height: auto;
   }
-  .product-img-wrapper >a> img {
-  width: 100%;
-  height: auto;
-  }
+
 
 }
 
@@ -1071,6 +1076,15 @@ a > ion-icon:hover{
   .checkoutItemContainer{
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .product-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
   }
 
 }
