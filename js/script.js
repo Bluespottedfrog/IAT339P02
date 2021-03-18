@@ -3,6 +3,9 @@ var hamburger   = document.getElementById("hamburger");
 var dabcat      = document.getElementById("dabcat");
 var bbtCat      = document.getElementById("bbt");
 
+var buttonsArray = document.getElementsByClassName('addToCartButton');
+console.log(buttonsArray.length);
+
 var anim = bodymovin.loadAnimation({
   container: cat,
   path: 'icons/cat.json',
@@ -73,4 +76,10 @@ function closeMenu(){
   getMenu.style.display = "none";
   getMenu.style.opacity = 0;
   console.log("working");
+}
+
+//ADD TO CART BUTTON
+function redirect(){
+  window.location.href = '/cart.html';
+
 }

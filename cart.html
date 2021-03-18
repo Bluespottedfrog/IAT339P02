@@ -109,17 +109,21 @@
       <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
 
-      <div class="half-width container column">  <!-- CONTAINER 1 -->
+      <div style="margin-top: 120px;" class="half-width container column">  <!-- CONTAINER 1 -->
         <div class="product-section">
-          <h1> MY CART </h1>
-          <h3 style="color: #c1e297;">购物车</h3>
+          <div>
+            <h1> MY CART </h1>
+            <h3 style="color: #c1e297;">购物车</h3>
+          </div>
           <div class="underline"></div>
         </div>
 
         <h3> Items </h3>
 
         <div class="checkoutItemContainer">
-
+          <button>
+            Remove
+          </button>
           <div class="checkoutItem">
             <img src="res/shirt.png">
             <a href="t-shirt.html"><h4> T-Shirt </h4></a>
@@ -127,7 +131,7 @@
 
           <div class="qtyButtonContainer">
               <div class="qtyButton">
-                <div class="sign">-</div>1<div class="sign">+</div>
+                <div class="signMinus">-</div><div class="amount">10</div><div class="signAdd">+</div>
               </div>
           </div>
 
@@ -138,6 +142,10 @@
         </div>
 
         <div class="checkoutItemContainer">
+          <button>
+            Remove
+          </button>
+
           <div class="checkoutItem">
             <img src="res/bottle.png">
             <a href="bottle.html"><h4> Water Bottle </h4></a>
@@ -145,7 +153,7 @@
 
           <div class="qtyButtonContainer">
               <div class="qtyButton">
-                <div class="sign">-</div>1<div class="sign">+</div>
+                <div class="signMinus">-</div><div class="amount">1</div><div class="signAdd">+</div>
               </div>
           </div>
 
@@ -205,7 +213,7 @@
 
       </div>
       <!-- END OF FOOTER -->
-      
+
 
     </div>
 

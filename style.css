@@ -67,6 +67,7 @@ h4{
 
 
 a{
+
   text-decoration: none;
 }
 
@@ -427,7 +428,7 @@ ion-icon.socials:hover{
   transition: opacity 0.25s linear;
 
 }
-.product-add > button{
+.product-add >  a >  button{
   opacity: 0;
   transform: translateY(10px);
   transition: transform 0.25s linear, opacity 0.25s linear;
@@ -435,7 +436,7 @@ ion-icon.socials:hover{
 .product-add:hover{
   opacity: 1;
 }
-.product-add:hover > button{
+.product-add:hover > a > button{
   opacity: 1;
   transform: translateY(0px);
 }
@@ -520,11 +521,43 @@ ion-icon.socials:hover{
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  text-align: center;
+
+}
+.signMinus, .signAdd, .amount{
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
   border-style: solid;
   border-width: 2px;
-  border-radius: 50px;
+  border-color: white;
 }
-
+.signMinus{
+  border-right: none;
+}
+.signAdd{
+  border-left: none;
+}
+.amount{
+  padding: 0px 4px 0px 4px;
+}
+.signMinus:hover, .signAdd:hover{
+  cursor: pointer;
+  background-color: #FFb600;
+  border-color: #ffb600;
+}
+.amount{
+  border-right: none;
+  border-left: none;
+}
+.signMinus{
+  border-radius: 50% 0% 0% 50%;
+}
+.signAdd{
+  border-radius: 0% 50% 50% 0%;
+}
 /* Total Amount due at check out */
 .totalContainer {
   /* height: 100%; */
