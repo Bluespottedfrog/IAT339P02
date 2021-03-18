@@ -11,6 +11,7 @@
 
   <body>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <!-- NAVBAR -->
     <div id="mobileMenu">
       <a href="index.html">
         <h2> Home </h2>
@@ -40,18 +41,16 @@
     </div>
 
     <div class="navbar">
-
       <div class="mobileNav">
+      <div class="nav-item-container">
+
+        <ion-icon onclick="showMenu()" id="hamburgerMenu" name="menu-outline" href="index.html"></ion-icon>
+
+      </div>
+
 
         <div class="nav-item-container">
-          <a href="index.html">
-          <ion-icon id="hamburgerMenu" name="menu-outline" href="index.html"></ion-icon>
-          </a>
-        </div>
-
-
-        <div class="nav-item-container">
-          <a href="checkout.html">
+          <a href="cart.html">
             <ion-icon id="checkout" name="basket-outline"></ion-icon>
           </a>
         </div>
@@ -66,7 +65,7 @@
         </div>
 
         <div class="nav-item-container">
-          <a class="nav-item" href="checkout.html">
+          <a class="nav-item" href="about.html">
             about
           </a>
         </div>
@@ -103,6 +102,7 @@
 
 
     </div>
+    <!-- ./NAVBAR -->
 
     <div class="wrapper center">  <!-- WRAPPER -->
 
