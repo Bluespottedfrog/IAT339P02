@@ -1,10 +1,10 @@
-body {
+.carousel-wrapper {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-.items {
+.carousel {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12,7 +12,7 @@ body {
   user-select: none;
 }
 
-.items .item {
+.carousel-item {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,32 +25,37 @@ body {
   z-index: -1;
   opacity: 0;
 }
+.carousel-item:hover{
+  cursor: pointer;
+}
 
-.item img {
+.carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.item.active {
+.carousel-item.active {
   opacity: 1;
   z-index: 99;
+  border-color: white;
+  border-style: solid;
+  border-width: 10px;
   box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
 }
-
-.item.prev {
+.carousel-item.prev {
   z-index: 2;
   opacity: 0.25;
   transform: translate(-150%, -50%) scale(70%);
 }
-
-.item.next {
+.carousel-item.next {
   z-index: 2;
   opacity: 0.25;
   transform: translate(50%, -50%) scale(70%);
 }
 
-.items .button-container {
+/* Carousel's  <  >  buttons */
+.carousel-button-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -59,8 +64,8 @@ body {
   z-index: 100;
 }
 
-.button-container .button {
-  color: #fff;
+.carousel-button {
+  color: white;
   font-size: 32px;
   cursor: pointer;
   position: relative;
@@ -68,12 +73,12 @@ body {
   transition: all 300ms ease-in-out;
 }
 
-.button-container .button:hover {
+.carousel-button:hover {
   opacity: 1;
 }
 
-.button-container .button:before {
-  content: "";
+.carousel-button:before {
+  content: " ";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -85,10 +90,10 @@ body {
   z-index: -99;
 }
 
-.button-container .button:nth-child(1) {
+.carousel-button:nth-child(1) {
   float: left;
 }
 
-.button-container .button:nth-child(2) {
+.carousel-button:nth-child(2) {
   float: right;
 }

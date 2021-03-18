@@ -10,34 +10,35 @@
 
   <body>
 
-
-  <div class="carousel">
-		<a class="carousel-item active">
-			<img src="res/videos/EnglishBay.png">
-		</a>
-		<a class="carousel-item next">
-			<img src="res/videos/SunflowerFestival.png">
-		</a>
-		<a class="carousel-item">
-			<img src="res/videos/Mahjong.png">
-		</a>
-		<a class="carousel-item">
-			<img src="res/videos/EnglishBay.png">
-		</a>
-		<a class="carousel-item prev">
-			<img src="res/videos/SunflowerFestival.png">
-		</a>
-		<div class="button-container">
-			<div class="button"><i class="fas fa-angle-left"></i></div>
-			<div class="button"><i class="fas fa-angle-right"></i></div>
-		</div>
-	</div>
+  <div class="carousel-wrapper">
+    <div class="carousel">
+  		<a class="carousel-item active">
+  			<img src="res/videos/EnglishBay.png">
+  		</a>
+  		<a class=" carousel-item next">
+  			<img src="res/videos/SunflowerFestival.png">
+  		</a>
+  		<a class="carousel-item">
+  			<img src="res/videos/Mahjong.png">
+  		</a>
+  		<a class="carousel-item">
+  			<img src="res/videos/EnglishBay.png">
+  		</a>
+  		<a class="carousel-item prev">
+  			<img src="res/videos/SunflowerFestival.png">
+  		</a>
+  		<div class="carousel-button-container">
+  			<div class="carousel-button"><i></i></div>
+  			<div class="carousel-button"><i></i></div>
+  		</div>
+  	</div>
+  </div>
 
 
   <script>
-  const slider = document.querySelector(".items");
-      const slides = document.querySelectorAll(".item");
-      const button = document.querySelectorAll(".button");
+  const slider = document.querySelector(".carousel");
+      const slides = document.querySelectorAll(".carousel-item ");
+      const button = document.querySelectorAll(".carousel-button");
 
       let current = 0;
       let prev = 4;
