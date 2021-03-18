@@ -1,6 +1,7 @@
 var cat         = document.getElementById("bm");
 var hamburger   = document.getElementById("hamburger");
 var dabcat      = document.getElementById("dabcat");
+var bbtCat      = document.getElementById("bbt");
 
 var anim = bodymovin.loadAnimation({
   container: cat,
@@ -27,6 +28,15 @@ var burgerAnim = bodymovin.loadAnimation({
   autoplay: false,
   name: 'menu'
 });
+
+var bbtAnim = bodymovin.loadAnimation({
+  container: bbtCat,
+  path: 'icons/bbtCat.json',
+  renderer: 'canvas',
+  loop: true,
+  autoplay: true,
+  name: 'bbtCat'
+})
 
 hamburger.addEventListener('mouseenter', () => {
   burgerAnim.setDirection(1);
