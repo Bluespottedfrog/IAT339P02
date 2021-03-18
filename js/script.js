@@ -2,6 +2,9 @@ var cat         = document.getElementById("bm");
 var hamburger   = document.getElementById("hamburger");
 var dabcat      = document.getElementById("dabcat");
 var bbtCat      = document.getElementById("bbt");
+const slider = document.getElementById("indexCarousel");
+const slides = document.querySelectorAll(".carousel-item");
+const button = document.querySelectorAll(".carousel-button");
 
 var buttonsArray = document.getElementsByClassName('addToCartButton');
 console.log(buttonsArray.length);
@@ -41,15 +44,17 @@ var bbtAnim = bodymovin.loadAnimation({
   name: 'bbtCat'
 })
 
-hamburger.addEventListener('mouseenter', () => {
-  burgerAnim.setDirection(1);
-  burgerAnim.play();
-});
+if(hamburger != null){
+  hamburger.addEventListener('mouseenter', () => {
+    burgerAnim.setDirection(1);
+    burgerAnim.play();
+  });
 
-hamburger.addEventListener('mouseleave', () => {
-  burgerAnim.setDirection(-1);
-  burgerAnim.play();
-});
+  hamburger.addEventListener('mouseleave', () => {
+    burgerAnim.setDirection(-1);
+    burgerAnim.play();
+  });
+}
 
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.animateLetters .letters');
@@ -81,19 +86,17 @@ function closeMenu(){
 //ADD TO CART BUTTON
 function redirect(){
   window.location.href = '/cart.html';
+}
 
-function moveCaresoul(){
-const slider = document.getElementById("indexCarousel");
-const slides = document.querySelectorAll(".carousel-item");
-const button = document.querySelectorAll(".carousel-button");
 
+
+
+if(button.length > 0){
 let current = 0;
 let prev = 3;
 let next = 1;
 
-for (let i = 0; i < button.length; i++) {
-    button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
-  }
+
 
 const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 const gotoNext = () => current < 3 ? gotoNum(current + 1) : gotoNum(0);
@@ -120,5 +123,12 @@ const gotoNum = number => {
     slides[current].classList.add("active");
     slides[prev].classList.add("prev");
     slides[next].classList.add("next");
+
   }
-}
+
+  for (let i = 0; i < button.length; i++) {
+
+      button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+
+    }
+  }
