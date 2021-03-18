@@ -110,7 +110,7 @@ form{
 */
 .half-width{
   width: 50vw;
-  margin-top: 120px;
+
 }
 .box{
   display: flex;
@@ -891,6 +891,11 @@ a > ion-icon:hover{
 #bm {
   width: 600px;
 }
+#bbt{
+  width: 600px;
+  align-self: bottom;
+}
+
 #dabcat{
   width: 400px;
   position: absolute;
