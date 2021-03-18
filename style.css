@@ -824,7 +824,9 @@ ion-icon.socials:hover{
 */
 /* Styling Details */
 .carousel-wrapper {
-  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 600px;
   padding: 0;
   overflow: hidden;
 }
@@ -849,7 +851,7 @@ ion-icon.socials:hover{
   overflow: hidden;
   transition: all .3s ease-in-out;
   opacity: 0;
-  z-index: -10;
+  z-index: -1;
 }
 .carousel-item:hover{
   cursor: pointer;
@@ -883,12 +885,12 @@ ion-icon.socials:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
+  width: 900px;
   z-index: 100;
 }
 .carousel-button {
-  color: white;
-  font-size: 32px;
+  /* color: white;
+  font-size: 32px; */
   cursor: pointer;
   position: relative;
   opacity: 0.75;
