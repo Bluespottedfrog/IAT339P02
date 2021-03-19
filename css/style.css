@@ -1003,6 +1003,13 @@ a > ion-icon:hover{
   color: #78a83B;
 }
 
+.cite-link {
+  margin: 0 1rem;
+}
+.cite-link:hover > a > p {
+  text-decoration: underline;
+}
+
 #youtube, #tiktok, #instagram, #twitter{
   transition: color 0.25s linear;
 }
