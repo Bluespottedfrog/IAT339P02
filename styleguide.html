@@ -341,22 +341,26 @@
           <h3>Checkout Item</h3>
 
           <div class="checkoutItemContainer">
+              <button class="checkoutItemRemove">
+                Remove
+              </button>
+
             <div class="checkoutItem">
-              <img src="res/shirt 1.png">
-              <h3> Shirt </h3>
+              <img src="res/shirt.png" alt="Checkout Shirt Item">
+              <a href="t-shirt.html"><h4> T-Shirt </h4></a>
             </div>
 
             <div class="qtyButtonContainer">
                 <div class="qtyButton">
-                  <div class="sign">-</div>1<div class="sign">+</div>
+                  <div class="signMinus">-</div><div class="amount">10</div><div class="signAdd">+</div>
                 </div>
             </div>
 
             <div class="priceContainer">
-              <h4>$29.99</h4>
+              <h4>$24.99</h4>
             </div>
-          </div>
 
+          </div>
           <code>
             &lt;div class="checkoutItemContainer"&gt;<br><br>
               &nbsp;&lt;div class="checkoutItem"&gt;<br>
@@ -382,11 +386,11 @@
 
         <div class="underline"></div>
           <h3>Brand Elements</h3>
-          <div>
-            <img class="svgCat" src="res/CatLogo.svg"/>
-            <img class="svgCat" src="res/BubbleTeaCat.svg"/>
-            <img class="svgCat" src="res/DabCat.svg"/>
-            <img class="svgCat" src="res/Cat.svg"/>
+          <div class="row">
+            <img style="width: 100px;" class="svgCat" src="res/CatLogo.svg"/>
+            <div style="width: 200px;" id="bm"></div>
+            <div style="width: 500px;" id="bbt"></div>
+            <div style="width: 200px;" id="dabcat"></div>
           </div>
 
       </div>  <!-- END OF CONTAINER 5 -->
