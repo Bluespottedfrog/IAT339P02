@@ -49,7 +49,7 @@
 
         <div class="nav-item-container">
           <a href="cart.html">
-            <ion-icon id="checkout" name="basket-outline"></ion-icon>
+            <ion-icon class="checkoutIcon" name="basket-outline"></ion-icon>
           </a>
         </div>
 
@@ -70,7 +70,7 @@
 
         <div class="nav-item-container">
           <a href="index.html">
-            <img id="headerLogo" src="res/CatLogo.svg"/>
+            <img id="headerLogo" src="res/CatLogo.svg" alt="CosyBen Logo"/>
           </a>
         </div>
 
@@ -93,7 +93,7 @@
 
       <div class="checkoutContainer">
       <a href="cart.html">
-        <ion-icon id="checkout" name="basket-outline"></ion-icon>
+        <ion-icon class="checkoutIcon" name="basket-outline"></ion-icon>
       </a>
       </div>
 
@@ -124,38 +124,40 @@
               <h4> $ 43.03 </h4>
             </div>
           </div>
-          <a href="cart.html">
-            <button> back to cart </button>
-          </a>
+          <div>
+            <a class="button" href="cart.html">
+              back to cart
+            </a>
         </div>
-          <form type="post" class="payment "><!-- Right -->
+        </div>
+          <form class="payment "><!-- Right -->
             <div class="column">
-              <label for=""><h4> Cardholder Name </h4></label>
+              <label><h4> Cardholder Name </h4></label>
               <div class="payment-input-wrapper">
                   <input type="text" placeholder="First Name" name="first-name">
                   <input type="text" placeholder="Last Name" name="last-name">
               </div>
 
-              <h4><label for="card-numer"> Card Number </label></h4>
+              <h4><label> Card Number </label></h4>
                 <input type="text" placeholder="0000 0000 0000 0000" name="card-number" maxlength="16">
 
               <div class="payment-input-wrapper">
                 <div class="column">
-                  <label for=""><h4> Expiry date </h4></label>
+                  <label><h4> Expiry date </h4></label>
                   <div class="row">
-                    <input type="number" placeholder="MM" name="exp-mon" maxlength="2" min="00" max="12">
-                    <input type="number" placeholder="YYYY" name="exp-year" maxlength="4" min="2020">
+                    <input type="number" placeholder="MM" name="exp-mon" min="00" max="12">
+                    <input type="number" placeholder="YYYY" name="exp-year"min="2020">
                   </div>
                 </div>
                 <div class="column">
-                  <label for=""><h4> CVV </h4></label>
+                  <label><h4> CVV </h4></label>
                   <input type="text" placeholder="000" name="cvc" maxlength="3">
                 </div>
 
               </div>
 
-            <input type="submit" value="Take My Money"></input>
-
+            <input type="submit" value="Take My Money">
+          </div>
           </form>
         </div>
       </div>  <!-- End of CONTAINER 1 -->
@@ -191,7 +193,7 @@
     </div>
     <!-- END OF FOOTER -->
 
-  </div>
+
 
 
   </body>

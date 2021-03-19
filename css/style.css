@@ -211,7 +211,7 @@ textarea:focus {
 }
 
 
-button{
+button, a.button{
   display: inline-flex;
   background-color: #ffb600;
   min-width: 100px;
@@ -224,10 +224,10 @@ button{
   text-decoration: none;
   text-transform: uppercase;
 }
-button:focus{
+button:focus, a.button:focus{
   outline:0;
 }
-button:hover{
+button:hover, a.button:hover{
   background-color: #E46A6c;
   cursor:pointer;
 }
@@ -1097,10 +1097,10 @@ a > ion-icon:hover{
   #bm{
     width: 300px;
   }
-  #hamburgerMenu, #checkout{
+  #hamburgerMenu, .checkoutIcon{
     font-size: 40px;
   }
-  #hamburgerMenu:hover, #checkout:hover{
+  #hamburgerMenu:hover, .checkoutIcon:hover{
     color: #78a83B;
     cursor: pointer;
   }

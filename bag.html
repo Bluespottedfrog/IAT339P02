@@ -4,10 +4,13 @@
   <head>
     <title> Hand Bag </title>
     <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
   </head>
 
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
+
 
   <body>
     <!-- NAVBAR -->
@@ -50,7 +53,7 @@
 
         <div class="nav-item-container">
           <a href="cart.html">
-            <ion-icon id="checkout" name="basket-outline"></ion-icon>
+            <ion-icon class="checkoutIcon" name="basket-outline"></ion-icon>
           </a>
         </div>
 
@@ -71,7 +74,7 @@
 
         <div class="nav-item-container">
           <a href="index.html">
-            <img id="headerLogo" src="res/CatLogo.svg"/>
+            <img id="headerLogo" src="res/CatLogo.svg" alt="CosyBen Logo"/>
           </a>
         </div>
 
@@ -94,7 +97,7 @@
 
       <div class="checkoutContainer">
       <a href="cart.html">
-        <ion-icon id="checkout" name="basket-outline"></ion-icon>
+        <ion-icon class="checkoutIcon" name="basket-outline"></ion-icon>
       </a>
       </div>
 
@@ -119,24 +122,24 @@
         <div class="indv-img column"><!-- Image Side -->
           <div class="indv-img-frame">
             <div class="indv-img-wrapper">
-              <img src="res/bag.jpg" title="CosyBen Bag">
+              <img src="res/bag.jpg" title="CosyBen Bag" alt="CosyBen Bag">
             </div>
           </div>
 
           <div class="row">
             <div class="indv-mini-img">
               <div class="indv-img-wrapper">
-                <img src="res/bag-2.png" title="CosyBen Bag">
+                <img src="res/bag-2.png" title="CosyBen Bag" alt="CosyBen Bag">
               </div>
             </div>
             <div class="indv-mini-img">
               <div class="indv-img-wrapper">
-                <img src="res/bag-1.png" title="CosyBen Bag">
+                <img src="res/bag-1.png" title="CosyBen Bag" alt="CosyBen Bag Mini">
               </div>
             </div>
             <div class="indv-mini-img">
               <div class="indv-img-wrapper">
-                <img src="res/bag-2.png" title="CosyBen Bag">
+                <img src="res/bag-2.png" title="CosyBen Bag" alt="CosyBen Bag Mini Alternative">
               </div>
             </div>
           </div>
@@ -161,12 +164,14 @@
           </div><br>
 
           <div class="indv-section">
-            <a href="cart.html" >
-             <button class="indv-button"> Add to Cart </button>
+            <a class="button indv-button" href="cart.html" >
+             Add to Cart
             </a>
-            <a href="checkout.html" >
-             <button class="indv-button-alt"> Buy it now </button>
+
+            <a class="button indv-button-alt" href="checkout.html" >
+              Buy it now
            </a>
+           
           </div>
 
           <div class="underline"></div>

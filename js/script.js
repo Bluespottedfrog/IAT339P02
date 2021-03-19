@@ -1,3 +1,5 @@
+"use strict"
+
 var cat         = document.getElementById("bm");
 var hamburger   = document.getElementById("hamburger");
 var dabcat      = document.getElementById("dabcat");
