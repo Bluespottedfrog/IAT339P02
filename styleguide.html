@@ -116,7 +116,7 @@
             <li><a href="#shop_temp"><h4>Product Listing Template</h4></a></li>
             <li><a href="#checkout_temp"><h4>Checkout Template</h4></a></li>
             <li><a href="#branding"><h4>Branding Elements</h4></a></li>
-            <li><a href="#citations"><h4>Citations</h4></a></li>
+            <li><a href="citation.html"><h4>Citations</h4></a></li>
           </ul>
         <div class="underline"></div>
 
@@ -125,25 +125,25 @@
         <h1>Yahei Bold - 72px</h1>
 
         <code>
-          <span><</span>h1<span>></span> Header <span><</span>h1<span>></span>
+          &lt;h1&gt; Header &lt;h1&gt;
         </code>
 
         <h2>Yahei Bold - 48px </h2>
 
         <code>
-          <span><</span>h2<span>></span> Header <span><</span>h2<span>></span>
+          &lt;h2&gt; Header &lt;h2&gt;
         </code>
 
         <h3>Yahei Bold - 32px</h3>
 
         <code>
-          <span><</span>h3<span>></span> Header <span><</span>h3<span>></span>
+          &lt;h3&gt; Header &lt;h3&gt;
         </code>
 
         <h4>Yahei Regular - 16px </h4>
 
         <code>
-          <span><</span>h4<span>></span> Header <span><</span>h4<span>></span>
+          &lt;h4&gt; Header &lt;h4&gt;
         </code>
 
       </div>  <!-- END OF CONTAINER 1 -->
@@ -161,22 +161,22 @@
 
         <code>
 
-          <span><</span>a href="" <span>></span> <br>
-            <span>&nbsp<</span>button<span>></span></span> YES<span><span>&nbsp<</span>/button<span>></span><br>
-          <span><</span>/a<span>></span><br>
+          &lt;a href="" &gt; <br>
+            &lt;button&gt;YES&lt;/button&gt;<br>
+          &lt;/a&gt;<br>
 
         </code>
 
         <input type="text" value="Text input field"> </input>
 
         <code>
-          <span><</span>input type="text" value="Text input field"<span>></span> <span><</span>/input<span>></span>
+          &lt;input type="text" value="Text input field"&gt; &lt;/input&gt;
         </code>
 
         <textarea placeholder="Text area input field" name="message" rows="4" cols="20" type="text" spellcheck="true"></textarea>
 
         <code>
-          <span><</span>textarea placeholder="Text area input field" name="message" rows="4" cols="20" type="text" spellcheck="true"<span>></span>
+          &lt;textarea placeholder="Text area input field" name="message" rows="4" cols="20" type="text" spellcheck="true"&gt;
         </code>
 
         <a class="nav-item" href="styleguide.html">
@@ -184,7 +184,7 @@
         </a>
 
         <code>
-          <span><</span>a class="nav-item"<span>></span> navigation link <span><</span>/a<span>></span>
+          &lt;a class="nav-item"&gt; navigation link &lt;/a&gt;
         </code>
 
         <h3> Icons </h3>
@@ -192,6 +192,9 @@
           <ion-icon name="logo-instagram"></ion-icon>
           <ion-icon name="logo-youtube"></ion-icon>
         </div>
+        <code>
+          &lt;ion-icon name="logo-name"&gt; &lt;/ion-icon&gt;
+        </code>
 
       </div>  <!-- END OF CONTAINER 2 -->
 
@@ -237,99 +240,28 @@
 
         <div class="underline"></div>
         <h3>Product Listing Template</h3>
-          <div class="container row space-between">
 
-            <div class="product-frame">
-
-              <div class="product-img-wrapper">
-                <a href="product/bag.html" target="_blank" rel="noopener noreferrer">
-                  <img src="res/bag.jpg" title="CosyBen Bag"></a>
-              </div>
-
-              <div class="product-detail text-link">
-                <a href="product/bag.html" target="_blank" rel="noopener noreferrer">
-                <h4>Hand Bag</h4>
-                <p>$19.99</p></a>
-              </div>
-
-            </div>
-
+          <div class="product-section">
             <div class="product-frame">
               <div class="product-img-wrapper">
-                <a href="product/bottle.html" target="_blank" rel="noopener noreferrer">
-                  <img src="res/bottle.jpg" title="CosyBen Bag">
+                <a href="bag.html" target="_blank" rel="noopener noreferrer">
+                  <div class="product-add">
+                      <button onclick="redirect()">Add to Cart</button>
+                  </div>
+                  <img src="res/bag.jpg" title="CosyBen Bag" alt="CosyBen Bag">
                 </a>
               </div>
               <div class="product-detail text-link">
-                <a href="res/bottle.html" target="_blank" rel="noopener noreferrer">
-                <h4>Water Bottle</h4>
-                <p>$15.99</p></a>
-              </div>
-            </div>
-
-            <div class="product-frame">
-              <div class="product-img-wrapper">
-                <a href="product/t-shirt.html" target="_blank" rel="noopener noreferrer">
-                  <img src="res/shirt.png" title="CosyBen Bag"></a>
-              </div>
-              <div class="product-detail">
-                <a class="text-link" href="product/t-shirt.html" target="_blank" rel="noopener noreferrer">
-                <h4>T-shirt</h4>
-                <p>$24.99</p></a>
-              </div>
-            </div>
-            <div class="product-frame">
-              <div class="product-img-wrapper">
-                <a href="product/t-shirt.html" target="_blank" rel="noopener noreferrer">
-                  <img src="res/shirt.png" title="CosyBen Bag"></a>
-              </div>
-              <div class="product-detail">
-                <a class="text-link" href="product/t-shirt.html" target="_blank" rel="noopener noreferrer">
-                <h4>T-shirt</h4>
-                <p>$24.99</p></a>
-              </div>
-            </div>
-            <div class="product-frame">
-              <div class="product-img-wrapper">
-                <a href="product/bottle.html" target="_blank" rel="noopener noreferrer">
-                  <img src="res/bottle.jpg" title="CosyBen Bag"></a>
-              </div>
-              <div class="product-detail text-link">
-                <a href="res/bottle.html" target="_blank" rel="noopener noreferrer">
-                <h4>Water Bottle</h4>
-                <p>$15.99</p></a>
-              </div>
-            </div>
-            <div class="product-frame">
-              <div class="product-img-wrapper">
-                <a href="product/bag.html" target="_blank" rel="noopener noreferrer">
-                  <img src="res/bag.jpg" title="CosyBen Bag"></a>
-              </div>
-              <div class="product-detail text-link">
-                <a href="product/bag.html" target="_blank" rel="noopener noreferrer">
+                <a href="bag.html" target="_blank" rel="noopener noreferrer">
                 <h4>Hand Bag</h4>
                 <p>$19.99</p></a>
               </div>
             </div>
-
-            <code>
-              &lt;div class="product-frame"&gt;<br><br>
-                &nbsp;&lt;div class="product-img-wrapper"&gt;<br>
-                  &nbsp;&nbsp;&lt;a href="product/bottle.html" target="_blank" rel="noopener noreferrer"&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&lt;img src="res/bottle.jpg" title="CosyBen Bag"&gt;<br>
-                  &nbsp;&nbsp;&lt;/a&gt;<br>
-                &nbsp;&lt;/div&gt;<br><br>
-                &nbsp;&lt;div class="product-detail text-link"&gt;<br>
-                  &nbsp;&nbsp;&lt;a href="res/bottle.html" target="_blank" rel="noopener noreferrer"&gt;<br>
-                &nbsp;&nbsp;&nbsp;  &lt;h4&gt;Water Bottle&lt;/h4&gt;<br>
-                &nbsp;&nbsp;  &lt;p&gt;$15.99&lt;/p&gt;&lt;/a&gt;<br>
-                &nbsp;&lt;/div&gt;<br><br>
-              &lt;/div&gt;
-            </code>
-
           </div>
 
-
+            <code>
+              &lt;div class=&quot;product-frame&quot;&gt;<br>&nbsp; &lt;div class=&quot;product-img-wrapper&quot;&gt;<br>&nbsp; &nbsp; &lt;a href=&quot;bag.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;<br>&nbsp; &nbsp; &nbsp; &lt;div class=&quot;product-add&quot;&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button onclick=&quot;redirect()&quot;&gt;Add to Cart&lt;/button&gt;<br>&nbsp; &nbsp; &nbsp; &lt;/div&gt;<br>&nbsp; &nbsp; &nbsp; &lt;img src=&quot;res/bag.jpg&quot; title=&quot;CosyBen Bag&quot; alt=&quot;CosyBen Bag&quot;&gt;<br>&nbsp; &nbsp; &lt;/a&gt;<br>&nbsp; &lt;/div&gt;<br>&nbsp; &lt;div class=&quot;product-detail text-link&quot;&gt;<br>&nbsp; &nbsp; &lt;a href=&quot;bag.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;<br>&nbsp; &nbsp; &lt;h4&gt;Hand Bag&lt;/h4&gt;<br>&nbsp; &nbsp; &lt;p&gt;$19.99&lt;/p&gt;&lt;/a&gt;<br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;
+            </code>
 
       </div>  <!-- END OF CONTAINER 4 -->
 
@@ -362,22 +294,7 @@
 
           </div>
           <code>
-            &lt;div class="checkoutItemContainer"&gt;<br><br>
-              &nbsp;&lt;div class="checkoutItem"&gt;<br>
-                &nbsp;&nbsp;&lt;img src="res/shirt 1.png"&gt;<br>
-                &nbsp;&nbsp;&lt;h3&gt; Shirt &lt;/h3&gt;<br>
-              &nbsp;&lt;/div&gt;<br><br>
-
-              &nbsp;&lt;div class="qtyButtonContainer"&gt;<br>
-                  &nbsp;&nbsp;&lt;div class="qtyButton"&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&lt;div class="sign"&gt;+&lt;/div&gt;01&lt;div class="sign"&gt;-&lt;/div&gt;<br>
-                  &nbsp;&nbsp;&lt;/div&gt;<br>
-              &nbsp;&lt;/div&gt;<br><br>
-
-              &nbsp;&lt;div class="priceContainer"&gt;<br>
-                &nbsp;&nbsp;&lt;h4&gt;$29.99&lt;/h4&gt;<br>
-              &nbsp;&lt;/div&gt;<br><br>
-            &lt;/div&gt;
+            &nbsp; &lt;div class=&quot;checkoutItemContainer&quot;&gt;<br>&nbsp; &nbsp; &nbsp; &lt;button class=&quot;checkoutItemRemove&quot;&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; Remove<br>&nbsp; &nbsp; &nbsp; &lt;/button&gt;<br><br>&nbsp; &nbsp; &lt;div class=&quot;checkoutItem&quot;&gt;<br>&nbsp; &nbsp; &nbsp; &lt;img src=&quot;res/shirt.png&quot; alt=&quot;Checkout Shirt Item&quot;&gt;<br>&nbsp; &nbsp; &nbsp; &lt;a href=&quot;t-shirt.html&quot;&gt;&lt;h4&gt; T-Shirt &lt;/h4&gt;&lt;/a&gt;<br>&nbsp; &nbsp; &lt;/div&gt;<br><br>&nbsp; &nbsp; &lt;div class=&quot;qtyButtonContainer&quot;&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;qtyButton&quot;&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;signMinus&quot;&gt;-&lt;/div&gt;&lt;div class=&quot;amount&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;signAdd&quot;&gt;+&lt;/div&gt;<br>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;<br>&nbsp; &nbsp; &lt;/div&gt;<br><br>&nbsp; &nbsp; &lt;div class=&quot;priceContainer&quot;&gt;<br>&nbsp; &nbsp; &nbsp; &lt;h4&gt;$24.99&lt;/h4&gt;<br>&nbsp; &nbsp; &lt;/div&gt;<br><br>&nbsp; &lt;/div&gt;
           </code>
 
       </div>  <!-- END OF CONTAINER 5 -->
