@@ -36,22 +36,20 @@
       </a>
 
       <br>
-      <button onclick="redirect()" onclick="closeMenu();"> Close Menu </button>
+      <button onclick="closeMenu();"> Close Menu </button>
     </div>
 
     <div class="navbar">
-
       <div class="mobileNav">
+      <div class="nav-item-container">
+
+        <ion-icon onclick="showMenu()" id="hamburgerMenu" name="menu-outline"></ion-icon>
+
+      </div>
+
 
         <div class="nav-item-container">
-          <a href="index.html">
-          <ion-icon id="hamburgerMenu" name="menu-outline" href="index.html"></ion-icon>
-          </a>
-        </div>
-
-
-        <div class="nav-item-container">
-          <a href="checkout.html">
+          <a href="cart.html">
             <ion-icon id="checkout" name="basket-outline"></ion-icon>
           </a>
         </div>
@@ -111,7 +109,7 @@
         <div class="mini-hero">
           <div  class="column ani">
             <h1>Shop</h1>
-            <h3 style="color: #c1e297;">黑风高里</h3>
+            <h3 style="color: #c1e297;">商店</h3>
           </div>
 
           <div style="width:300px; align-self:flex-end;" id="dabcat"></div>

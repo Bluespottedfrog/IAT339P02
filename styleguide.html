@@ -8,18 +8,46 @@
 
   <body>
     <!-- NAVBAR -->
+    <div id="mobileMenu">
+      <a href="index.html">
+        <h2> Home </h2>
+      </a>
+      <a href="shop.html">
+        <h2> Shop </h2>
+      </a>
+
+      <a href="about.html">
+        <h2> About </h2>
+      </a>
+
+      <a href="events.html">
+        <h2> Events </h2>
+      </a>
+
+      <a href="contact.html">
+        <h2> Contact </h2>
+      </a>
+      <br>
+      <a href="cart.html">
+        <h2> Cart </h2>
+      </a>
+
+      <br>
+      <button onclick="closeMenu();"> Close Menu </button>
+    </div>
+
     <div class="navbar">
-
       <div class="mobileNav">
+      <div class="nav-item-container">
+
+        <ion-icon onclick="showMenu()" id="hamburgerMenu" name="menu-outline"></ion-icon>
+
+      </div>
+
 
         <div class="nav-item-container">
-              <ion-icon id="hamburgerMenu" name="menu-outline"></ion-icon>
-        </div>
-
-
-        <div class="nav-item-container">
-          <a href="checkout.html">
-            <ion-icon name="basket-outline"></ion-icon>
+          <a href="cart.html">
+            <ion-icon id="checkout" name="basket-outline"></ion-icon>
           </a>
         </div>
 
@@ -33,7 +61,7 @@
         </div>
 
         <div class="nav-item-container">
-          <a class="nav-item" href="checkout.html">
+          <a class="nav-item" href="about.html">
             about
           </a>
         </div>
@@ -57,9 +85,18 @@
         </div>
 
 
-        <!-- INSERT SHOP ICON HERE -->
 
       </div>
+
+
+      <div class="checkoutContainer">
+      <a href="cart.html">
+        <ion-icon id="checkout" name="basket-outline"></ion-icon>
+      </a>
+      </div>
+
+
+
     </div>
     <!-- ./NAVBAR -->
 
