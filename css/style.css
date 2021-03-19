@@ -912,12 +912,16 @@ ion-icon.socials:hover{
 .carousel-item.prev {
   opacity: 30%;
   z-index: 2;
-  transform: translate(-155%, -50%) scale(0.7);
+  -webkit-transform: translate(-155%, -50%) scale(70%);
+    -ms-transform: translate(-155%, -50%) scale(70%);
+        transform: translate(-155%, -50%) scale(70%);
 }
 .carousel-item.next {
   opacity: 30%;
   z-index: 2;
-  transform: translate(55%, -50%) scale(0.7);
+  -webkit-transform: translate(55%, -50%) scale(70%);
+    -ms-transform: translate(55%, -50%) scale(70%);
+        transform: translate(55%, -50%) scale(70%);
 }
 /* Carousel's  <  >  buttons */
 .carousel-button-container {
@@ -1121,7 +1125,9 @@ a > ion-icon:hover{
     flex-direction: column;
     align-items: flex-start;
   }
-
+  .checkoutItemRemove{
+    margin-left: 10%;
+  }
   .product-section{
     display: flex;
     flex-direction: row;
