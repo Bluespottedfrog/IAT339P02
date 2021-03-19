@@ -1127,7 +1127,9 @@ a > ion-icon:hover{
     flex-direction: column;
     align-items: flex-start;
   }
-
+  .checkoutItemRemove{
+    margin-left: 10%;
+  }
   .product-section{
     display: flex;
     flex-direction: row;
