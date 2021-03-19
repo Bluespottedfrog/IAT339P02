@@ -4,12 +4,11 @@
 */
 @font-face{
   font-family: YaHei Regular;
-  src: url('fonts/Microsoft Yahei.ttf');
-  font-weight: regular;
+  src: url('../fonts/Microsoft Yahei.ttf');
 }
 @font-face{
   font-family: YaHei;
-  src: url('fonts/Microsoft Yahei Bold.ttf');
+  src: url('../fonts/Microsoft Yahei Bold.ttf');
   font-weight: bold;
 }
 
@@ -258,7 +257,6 @@ input[type=submit]{
   border-style: none;
   color: white;
   font-family: YaHei;
-  font-weight: regular;
   text-transform: uppercase;
   margin: 15px 0px 15px 0px;
 }
@@ -800,7 +798,7 @@ ion-icon.socials:hover{
   background-color: #90C947;
   border: solid 2px #FFF;
 }
-.indv-button-alt: hover {
+.indv-button-alt:hover {
   background-color: #E46A6C;
 }
 .indv-icons {
@@ -914,12 +912,12 @@ ion-icon.socials:hover{
 .carousel-item.prev {
   opacity: 30%;
   z-index: 2;
-  transform: translate(-155%, -50%) scale(70%);
+  transform: translate(-155%, -50%) scale(0.7);
 }
 .carousel-item.next {
   opacity: 30%;
   z-index: 2;
-  transform: translate(55%, -50%) scale(70%);
+  transform: translate(55%, -50%) scale(0.7);
 }
 /* Carousel's  <  >  buttons */
 .carousel-button-container {
@@ -1041,7 +1039,7 @@ a > ion-icon:hover{
 }
 #bbt{
   width: 600px;
-  align-self: bottom;
+  align-self: flex-end;
 }
 
 #dabcat.dabcat{
