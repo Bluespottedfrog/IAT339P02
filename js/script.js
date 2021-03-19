@@ -9,7 +9,6 @@ const slides = document.querySelectorAll(".carousel-item");
 const button = document.querySelectorAll(".carousel-button");
 
 var buttonsArray = document.getElementsByClassName('addToCartButton');
-console.log(buttonsArray.length);
 
 var anim = bodymovin.loadAnimation({
   container: cat,
@@ -60,16 +59,19 @@ if(hamburger != null){
 
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.animateLetters .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+if(textWrapper != null){
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: false})
-  .add({
-    targets: '.animateLetters .letter',
-    scale: [0, 1],
-    duration: 1500,
-    elasticity: 600,
-    delay: (el, i) => 45 * (i+1)
-});
+
+  anime.timeline({loop: false})
+    .add({
+      targets: '.animateLetters .letter',
+      scale: [0, 1],
+      duration: 1500,
+      elasticity: 600,
+      delay: (el, i) => 45 * (i+1)
+  });
+}
 
 function showMenu(){
   var getMenu = document.getElementById("mobileMenu");
